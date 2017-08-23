@@ -19,7 +19,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a01-console:](https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a01-console ) A simple console program to get things started. No webpage needed 
 
-1.
+1. [a01-voltage-divider](https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a02-voltage-divider) Using a voltage divider to better control the output of a 2 prong sensor
 
 1.
 
