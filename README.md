@@ -17,7 +17,19 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-but some parts of the series will change as things improve so the following github sites may have more uptodate information
+1. https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a01-console A simple console program to get things started. No webpage needed
+
+
+
+
+
+
+
+
+
+
+
+
 
 My main github location
 https://github.com/hpssjellis?tab=repositories
