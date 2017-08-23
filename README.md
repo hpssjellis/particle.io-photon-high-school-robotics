@@ -52,7 +52,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-. Advanced websockets Has it's own github site at https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
+1. Advanced websockets Has it's own github site at https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
 
 
 
