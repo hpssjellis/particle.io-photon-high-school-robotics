@@ -1,0 +1,28 @@
+// Voltage Divider
+// By Jeremy Ellis
+
+// Connect A6 (DAC) to A0
+
+
+int myRandomNumber = 0;
+
+void setup() {
+      pinMode(DAC, OUTPUT);
+      // You don't have to declare A0 for Analog read!
+
+}
+
+void loop() {
+  myRandomNumber  = rand() % 4094;
+  
+  analogWrite(DAC, myRandomNumber );
+ 
+  Particle.publish("DAC (A6) sending", String( myRandomNumber), 60, PRIVATE);  // shows A0
+  delay(1000); // wait about 1 seconds
+  Particle.publish("Analog Read A0 = ", String(analogRead(A0)), 60, PRIVATE);  // shows A0
+  delay(1000); // wait about 1 seconds
+  Particle.publish("---------------","------------------", 60, PRIVATE);  // shows A0
+  delay(6000); // wait about 6 seconds
+
+}
+
