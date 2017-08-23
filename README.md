@@ -24,6 +24,29 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
+.
+
+
+
+.
+
+
+
+
+.
+
+
+
+
+.
+
+
+
+
+
+.
+
+
 
 
 
