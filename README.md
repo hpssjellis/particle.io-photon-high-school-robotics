@@ -11,13 +11,13 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-[![As Simple As Possible Robotics but not simpler](http://img.youtube.com/vi/zRZJHMFL0p4/0.jpg)](https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)
+[![particle.io photon high school robotics](http://img.youtube.com/vi/zRZJHMFL0p4/0.jpg)](https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)
 
 
 
 
 
-1. A simple console program to get things started. No webpage needed https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a01-console 
+1. a01-console A simple console program to get things started. No webpage needed https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a01-console 
 
 1.
 
@@ -52,7 +52,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-1. Advanced websockets Has it's own github site at https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
+1. Advanced websockets has it's own github site at https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
 
 
 
