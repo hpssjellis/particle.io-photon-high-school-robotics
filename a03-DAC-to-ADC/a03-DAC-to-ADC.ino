@@ -18,13 +18,13 @@ void loop() {
   myRandomNumber  = rand() % 4094;
   analogWrite(DAC, myRandomNumber );
  
-  Particle.publish("DAC (A6) sending", String( myRandomNumber), 60, PRIVATE);  // shows A0
+  Particle.publish("DAC (A6) sending", String( myRandomNumber), 60, PRIVATE);  // shows A6
   delay(1000); // wait about 1 seconds
   Particle.publish("Analog Read A0 = ", String(analogRead(A0)), 60, PRIVATE);  // shows A0
   delay(1000); // wait about 1 seconds
-  Particle.publish("Digital Read D6 = ", String(digitalRead(D6)), 60, PRIVATE);  // shows A0
+  Particle.publish("Digital Read D6 = ", String(digitalRead(D6)), 60, PRIVATE);  // shows D6
   delay(1000); // wait about 1 seconds
-  Particle.publish("---------------","------------------", 60, PRIVATE);  // shows A0
+  Particle.publish("---------------","------------------", 60, PRIVATE);  // shows spaces
   delay(6000); // wait about 6 seconds
 
 }
