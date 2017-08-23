@@ -14,7 +14,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 [![particle.io photon high school robotics](http://img.youtube.com/vi/zRZJHMFL0p4/0.jpg)](https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)
 
 
-
+[Photon Firmware](https://docs.particle.io/reference/firmware/photon/) is a good reference.
 
 
 1. [a01-console:](https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a01-console ) A simple console program to get things started. No webpage needed. outputs A0 to the console. Then uses a GND, 3V3, SIG variable resistor.
