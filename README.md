@@ -22,11 +22,15 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 .
+## Good References
 
 
 
+[Photon.io](https://www.particle.io/) 
+[Particle Community](https://community.particle.io/) Great help when you are stuck
+[Photon Firmware Documentation](https://docs.particle.io/reference/firmware/photon/) Learn about the firmware (The software that runs the Photon).
 
-[Photon Firmware Documentation](https://docs.particle.io/reference/firmware/photon/) is a good reference.
+
 
 
 ## List of Videos
