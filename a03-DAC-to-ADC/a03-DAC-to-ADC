@@ -17,11 +17,11 @@ void loop() {
   
   analogWrite(DAC, myRandomNumber );
  
-  Particle.publish("DAC (A6) sending", String( myRandomNumber), 60, PRIVATE);  // shows A0
+  Particle.publish("DAC (A6) sending", String( myRandomNumber), 60, PRIVATE);  // shows DAC
   delay(1000); // wait about 1 seconds
   Particle.publish("Analog Read A0 = ", String(analogRead(A0)), 60, PRIVATE);  // shows A0
   delay(1000); // wait about 1 seconds
-  Particle.publish("---------------","------------------", 60, PRIVATE);  // shows A0
+  Particle.publish("---------------","------------------", 60, PRIVATE);  
   delay(6000); // wait about 6 seconds
 
 }
