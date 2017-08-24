@@ -14,8 +14,8 @@
   </author>
   
   
-  <gap:plugin name="cordova-plugin-whitelist" source="npm"/> <!-- Yes this is needed -->
-
+ <!--   <gap:plugin name="cordova-plugin-whitelist" source="npm"/> --> <!-- Yes this is needed -->
+  <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
   
   <!-- all platforms -->
     
