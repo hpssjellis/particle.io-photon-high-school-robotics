@@ -1,4 +1,4 @@
-// rocksetta.ino
+// web-app.ino
 
 
 // For web control of the Particle.io Photon or
