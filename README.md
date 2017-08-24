@@ -49,9 +49,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a06-web-app](https://youtu.be/NocvWycfz2o) A web page replacement for the Tinker App. You can edit the web page to look and control any pins on the Photon
 
-1.[A07-mobile-App](https://youtu.be/nR8pwlmnSJU). Once you have a working web page you can then convert the web page into a Free Android (or IOS for $100 per year !) That can be installed on your android phone using [Phonegap Build](https://build.phonegap.com)
+1. [A07-mobile-App](https://youtu.be/nR8pwlmnSJU). Once you have a working web page you can then convert the web page into a Free Android (or IOS for $100 per year !) That can be installed on your android phone using [Phonegap Build](https://build.phonegap.com)
 
-1.[A08-IFTTT]() Have your Photon control other devices on the web using https://ifttt.com
+1. [A08-IFTTT]() Have your Photon control other devices on the web using https://ifttt.com. Today we just use a button to turn on D7 but using IFTTT
 
 
 1.
