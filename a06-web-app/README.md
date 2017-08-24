@@ -1,11 +1,13 @@
 
-Note: I wanted the index.html and config.xml files in this folder but the rules for phonegap build say those files must be in the main repository folder.
+Note: I wanted the index.html and config.xml files in this folder but the rules for phonegap build say those files must be in the main repository folder so I have re-named index.html to web-app.html here so you can work on it.
 
 
 ## Web page control of the Photon (or Raspberry Pi)
 
 
 1. Load web-app.ino on the particle IDE and flash it to your Photon
+
+1. Download to your computer or website the web-app.html file and edit it as needed. (Or work with it on your forked version of github but the page refreshes slower than on your computer or own website!)
 
 1. Then go up a directory and copy index.html to your computer. (Editing on your computer is faster than on github)
 
@@ -14,14 +16,14 @@ Note: I wanted the index.html and config.xml files in this folder but the rules 
 
 1. Load webpage index.html on your browser (best using Google Chrome) For this site it is at 
 
-https://hpssjellis.github.io/particle.io-photon-high-school-robotics/index.html
+https://github.com/hpssjellis/particle.io-photon-high-school-robotics/master/a06-web-app/web-app.html
 
-make sure you are using the correct link to your index.html page.
+make sure you are using the correct link to your web-app.html page if using your computer or website.
 
 
-1. Enter your photon's  id and access code
+1. Enter your photon's  id and access code. Click the local browser storage save button
 
-1. Check that you can control D7
+1. Check that you can control D7 on your photon
 
 
 
@@ -30,7 +32,7 @@ make sure you are using the correct link to your index.html page.
 1. Make sure you have forked this github repository
 
 
-1. Upload your index.html to your forked version of this github repository (Must be in the main folder)
+1. Upload your web-app.html into the index.html file of your forked version (Main folder location) of this github repository 
 
 
 1. Link to phonegap build
@@ -38,6 +40,6 @@ make sure you are using the correct link to your index.html page.
 
 https://build.phonegap.com
 
-1. New App, copy your github URL Build your app and test it.
+1. New App, copy your github URL, Build your app, use the QR-code to download, install and test it on an Android phone (Or pay the $100 to Apple to test an IOs App)
 
 
