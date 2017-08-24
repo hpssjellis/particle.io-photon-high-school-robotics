@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.yoursite.basicparticle"
+    version     = "1.02.03" >      <!-- Change this before each compile -->
+
+  <name>Particle-Communication-Photon or Pi</name>
+  <description>
+      An example for phonegap build docs.
+  </description>
+  
+  <author href="https://yoursite.com" email="you@gmail.com">
+      yourName
+  </author>
+  
+  
+  <gap:plugin name="cordova-plugin-whitelist" source="npm"/> <!-- Yes this is needed -->
+
+  
+  <!-- all platforms -->
+  <preference name="phonegap-version" value="cli-6.5.0" />  
+ <!-- 
+  <preference name="phonegap-version" value="3.7.0" />
+  <preference name="phonegap-version" value="cli-6.3.0" />  
+  <preference name="phonegap-version" value="cli-5.4.1" />  
+ -->
+ 
+  <preference name="orientation" value="default" />
+  <preference name="fullscreen" value="true" />
+
+
+
+  <!-- Android only -->
+
+  <preference name="android-installLocation" value="auto" />
+  
+  
+  <!-- Android SDK versions 4.0=14  4.4=19,    5.1=22,  6.0=23,   7.0=24  -->
+  
+  
+</widget>
