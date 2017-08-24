@@ -2,7 +2,11 @@
 1. load .ino onto photon
 
 
-load webpage index.html
+load webpage index.html. For this site it is at 
+
+https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a06-web-app/index.html
+
+make sure you are using the correct link to your page.
 
 
 enter id and access code
