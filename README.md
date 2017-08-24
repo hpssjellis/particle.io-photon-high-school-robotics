@@ -51,7 +51,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1.[A07-mobile-App](https://youtu.be/nR8pwlmnSJU). Once you have a working web page you can then convert the web page into a Free Android (or IOS for $100 per year !) That can be installed on your android phone using [Phonegap Build](https://build.phonegap.com)
 
-1.
+1.[A08-IFTTT]() Have your Photon control other devices on the web using https://ifttt.com
 
 
 1.
