@@ -1,4 +1,7 @@
 
+Note: I wanted the index.html and config.xml files in this folder but the rules for phonegap build say those files must be in the main repository folder.
+
+
 ## Web page control of the Photon (or Raspberry Pi)
 
 
