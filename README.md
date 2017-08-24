@@ -43,7 +43,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a03-DAC-to-ADC:](https://youtu.be/lFoDp0gJv_g) This program shows how to change a digital signal into and anlog signal and then what happens when that analog signal is read by the analog pin A0 and the digital pin D6 
 
-1. [a04-SOS-programming]() A short look at programming the particle.io photon by making students control the D7 LED to flash SOS
+1. [a04-SOS-programming](https://youtu.be/ZnaCcftdiR0) A short look at programming the particle.io photon by making students control the D7 LED to flash SOS
 
 1. [a04-tinker]() A quick look at the tinker program that is part of the Particle android or IOs Apps
 
