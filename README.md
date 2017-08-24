@@ -37,13 +37,13 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 ## List of Videos
 
-1. [a01-console:]()  A simple console program to get things started. No webpage needed. outputs A0 to the console. Then uses a GND (black), 3V3 (red) , SIG (yellow) sensor in this case a [slide potentiometer](https://www.seeedstudio.com/Grove-Slide-Potentiometer-p-1196.html) (variable resitor).
+1. [a01-console:](https://youtu.be/chaqZgd_6Vs)  A simple console program to get things started. No webpage needed. outputs A0 to the console. Then uses a GND (black), 3V3 (red) , SIG (yellow) sensor in this case a [slide potentiometer](https://www.seeedstudio.com/Grove-Slide-Potentiometer-p-1196.html) (variable resitor).
 
 1. [a02-voltage-divider:]()  Using a voltage divider to better control the output of a 2 prong sensor in this case a [SNAP circuit photoresistor](http://www.elenco.com/product/productdetails/snap_circuits&amp%3Breg_parts=MTAw/photosensitive_resistor=ODE4)
 
 1. [a03-DAC-to-ADC:]() This program shows how to change a digital signal into and anlog signal and then what happens when that analog signal is read by the analog pin A0 and the digital pin D6 
 
-1.
+1. [a04-tinker]() A quick look at the tinker program that is part of the Particle android or IOs Apps
 
 1.
 
