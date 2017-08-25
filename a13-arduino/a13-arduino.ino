@@ -1,12 +1,14 @@
 // a13-arduino
 // By Jeremy Ellis
-
-
+// MIT License
 
 // 3V3 to slider switch to D6
-// Power off at D6 you get a Wifi out of the box Photon
-// Power on  at D6 you get a Regular Arduino
+// Switch off at D6 you get a Wifi out of the box Photon
+// Switch on  at D6 you get an Arduino!
+// The main flashing LED is really interesting 
 
+// These are fancy feactures so be carefull
+SYSTEM_THREAD(ENABLED);
 SYSTEM_MODE(SEMI_AUTOMATIC);
 
 
@@ -26,11 +28,9 @@ void loop() {
     digitalWrite(D7, 0);
     delay(1000);    
     
-    if (digitalRead(D6) == 0){   // learn how to use an else statment
+    if (digitalRead(D6) == 0){   
         Particle.connect();      // Cool I am a Photon
-    }
-    
-    if (digitalRead(D6) == 1){
+    } else {
         Particle.disconnect();  // Now I am an Arduino
     }
         
@@ -38,9 +38,8 @@ void loop() {
 
 
 
-// Learn how to load safe mode when things mess up
-// 1. on bootup hold both setup and reset
-// 2. release reset immediately then release setup when purple flashing
-// Now you can re-flash the photon if stuck with a photon not accessing the cloud
-
+// Learn how to load SAFE MODE when things mess up
+// 1. On bootup hold both SETUP and RESET buttons
+// 2. Release RESET immediately 
+// When LED fashing purple relese SETUP button
 
