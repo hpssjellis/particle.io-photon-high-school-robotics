@@ -60,7 +60,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a11-DC-motor-drivers](https://youtu.be/-LZL-XpIsHs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) For DC motors I would like you to use the web-app.ino and web-app.html to control both the dual motor driver and the big motor driver. I have included some check programs to make sure your connections are working.
 
-1. [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Just proving that a [Pololu stepper motor](https://www.pololu.com/product/1204) with [stepper driver](https://www.pololu.com/product/2134) works. You should try to program it to do more fancy things.
+1. [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Just proving that a [Pololu stepper motor](https://www.pololu.com/product/1204) with [Pololu stepper driver](https://www.pololu.com/product/2134) works. You should try to program it to do more fancy things.
 
 1.
 
