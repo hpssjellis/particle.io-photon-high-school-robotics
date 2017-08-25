@@ -9,10 +9,21 @@ Good luck.
 
 
 ![](a-dual-motor-driver.png)
+[The Dual Motor Driver Pololu link](https://www.pololu.com/product/2135)
+
+
+
+.
+
+
+
+.
+
 
 
 
 ![](big-motor-driver.png)
+[The Big Motor Driver link](https://www.pololu.com/product/1451)
 
 
 
