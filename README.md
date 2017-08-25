@@ -58,7 +58,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a10-transistor](https://youtu.be/S6xwStw-t1U?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). Using a PNP transistor to protect the Photon while controlling a more powerful circuit
 
-1. a11-DC-motor-drivers
+1. [a11-DC-motor-drivers]() For DC motors I would like you to use the web-app.ino and web-app.html to control both the dual motor driver and the big motor driver. I have included some check programs to make sure your connections are working.
 
 1. a12-stepper-motor-driver
 
