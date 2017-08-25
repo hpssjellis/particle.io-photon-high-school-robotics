@@ -27,4 +27,4 @@ Good luck.
 
 
 
-The dual motor driver can control two motors (you only have to get one working :>), the big motor driver can only control one motor but it can run a larger current and voltage. To prove that your motors work you can just use any 6V brushed DC motor. Sorry I don't have a good understanding yet of brushless motor drivers, but I will include a diagram when I can (The setup is easy it is the programming of the motor driver that seems confusing). 
+The dual motor driver (Max 11 V and 1.2 Amps for each motor) can control two motors (you only have to get one motor working :>), the big motor driver can only control one motor but it can run a larger current (30 Amps Max) and voltage (41 Volts Max). To prove that your motors work you can just use any 6V brushed DC motor. Sorry I don't have a good understanding yet of brushless motor drivers, but I will include a diagram when I can (The setup is easy it is the programming of the motor driver that seems confusing). 
