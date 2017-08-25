@@ -8,7 +8,7 @@ Now it is your turn to make two working cuircuit diagrams from the images below 
 Good luck.
 
 
-![](a-dual-motor-driver.png)
+![](a-dual-motor-driver2.png)
 [The Dual Motor Driver Pololu link](https://www.pololu.com/product/2135)
 
 
@@ -22,7 +22,7 @@ Good luck.
 
 
 
-![](big-motor-driver.png)
+![](big-motor-driver2.png)
 [The Big Motor Driver link](https://www.pololu.com/product/1451)
 
 
