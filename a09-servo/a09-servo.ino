@@ -2,7 +2,6 @@
 // By Jeremy Ellis
 // MIT License
 
-
 // servo red to 6V battery positive
 // servo ground (brown or black) to 6V battery negative
 // servo ground to Photon GND
@@ -40,9 +39,6 @@ void loop() {
 
 
     digitalWrite(D7, 0);     // D7 off
-    
-    
-    
     delay(5000);            // 5 second delay
 
 }
