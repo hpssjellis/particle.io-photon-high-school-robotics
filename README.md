@@ -51,10 +51,10 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [A07-mobile-App](https://youtu.be/nR8pwlmnSJU). Once you have a working web page you can then convert the web page into a Free Android (or IOS for $100 per year !) That can be installed on your android phone using [Phonegap Build](https://build.phonegap.com)
 
-1. [A08-IFTTT]() Have your Photon control other devices on the web using https://ifttt.com. Today we just use a button to turn on D7 but using IFTTT
+1. [A08-IFTTT](https://youtu.be/DOlYkTn84Bs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Have your Photon control other devices on the web using https://ifttt.com. Today we just use a button to turn on D7 but using IFTTT
 
 
-1.
+1. [a09-servo]() Get a 6V servo working. Never run a 6V servo off the photon. It may work for a few seconds but my students have fried too many photons doing that. Challenge: How to get the servo working with the web-app? 
 
 1.
 
