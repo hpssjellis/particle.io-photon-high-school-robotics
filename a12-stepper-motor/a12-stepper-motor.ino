@@ -15,9 +15,8 @@ void loop() {
     digitalWrite(D2, 0);  // pick a direction
     
     digitalWrite(D3, 1);  // do a step
-    delay(3);          // wait 100 ms
+    delay(3);             // wait 3 ms
     
     digitalWrite(D3, 0);  // reset step or does it also step?
-    delay(3);
-
+    delay(3);             // wait 3 ms
 }
