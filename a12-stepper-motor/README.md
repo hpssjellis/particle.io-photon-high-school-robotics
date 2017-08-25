@@ -1,7 +1,7 @@
 
 
 
-Connect [stepper motor](https://www.pololu.com/product/1204) and [stepper driver](https://www.pololu.com/product/2134) as in the diagram
+Connect the Pololu [stepper motor](https://www.pololu.com/product/1204) and [stepper driver](https://www.pololu.com/product/2134) as in the diagram
 
 
 ![](pololu8834Driver08-use.png)
