@@ -23,7 +23,7 @@ Good luck.
 
 
 
-![](big-motor-driver2.png)
+![](big-motor-driver3.png)
 [The Big Motor Driver link](https://www.pololu.com/product/1451)
 
 
