@@ -10,6 +10,10 @@
 // In a PNP transistor the proton Ground (GND) goes to the BASE (N)
 // And both circuits connect their Positives (Pins on the Photon) to the Collector (P)
 
+// Trick here, the middle letter is always what the Photon connects to. 
+// PNP transistor the Photon connects ground wich is negative 
+// NPN photon connects pins which are positive. 
+
 
 void setup() {
    pinMode(A4, OUTPUT);
