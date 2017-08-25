@@ -41,5 +41,5 @@ void loop() {
 // Learn how to load SAFE MODE when things mess up
 // 1. On bootup hold both SETUP and RESET buttons
 // 2. Release RESET immediately 
-// When LED fashing purple relese SETUP button
+// 3. When LED fashing purple relese SETUP button
 
