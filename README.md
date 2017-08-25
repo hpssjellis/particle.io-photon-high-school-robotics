@@ -56,11 +56,11 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a09-servo](https://youtu.be/IlVX7E-KEmY?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Get a 6V servo working. Never run a 6V servo off the photon. It may work for a few seconds but my students have fried too many photons doing that. Challenge: How to get the servo working with the web-app? 
 
-1.
+1. [a10-transistor](https://youtu.be/S6xwStw-t1U?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). Using a PNP transistor to protect the Photon while controlling a more powerful circuit
 
-1.
+1. a11-DC-motor-drivers
 
-1.
+1. a12-stepper-motor-driver
 
 1.
 
