@@ -4,7 +4,7 @@
 
 Now it is your turn to make two working circuit diagrams from the images below and to get them running using the Photon and the Web-app. 
 
-
+Use the two check.ino to test your electrical connections
 
 Good luck.
 
