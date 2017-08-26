@@ -2,7 +2,7 @@
 
 Before flashing the .ino file to your photon remember to go to the FPS library and include  .cpp and .h files into your project.
 
-![](fps-image.jpg)
+![](fps-image.jpg | width=200)
 
 
 
