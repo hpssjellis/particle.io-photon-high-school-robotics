@@ -68,7 +68,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a15-serial-SPI using the Pixy](https://youtu.be/AngRhXIYG2Y?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Demonstrating how to use SPI serial connections with the very cool [Pixy camera](http://charmedlabs.com/default/pixy-cmucam5/)
 
-1. a16-serial-uART using a finger print scanner
+1. [a16-serial-uART using a finger print scanner](https://youtu.be/GDRUk4ICt48?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) purchased from [sparkfun.com](https://www.sparkfun.com/products/13007)
 
 1. a17 rangefinder
 
