@@ -64,9 +64,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a13-arduino](https://youtu.be/VYskWeBI9Os?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). When Wifi is bad make your Photon switch between Photon normal behaviour and Non-Wifi Arduino normal behaviour.
 
-1. a14-serial-I2C using Groove OLED
+1. [a14-serial-I2C](https://youtu.be/oGOPE2gaRtE?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)  using the [Groove OLED](https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html?gclid=CjwKCAjwuITNBRBFEiwA9N9YEF94ToMEP2Km6hlBt4COL7mtPW3P8zrbwAyTHhaB_6V2FNqwhNl2GxoCxYQQAvD_BwE) Showing how to make words print out on a very small display.
 
-1. a15-serial-SPI using the Pixy
+1. [a15-serial-SPI using the Pixy](https://youtu.be/AngRhXIYG2Y?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Demonstrating how to use SPI serial connections with the very cool [Pixy camera](http://charmedlabs.com/default/pixy-cmucam5/)
 
 1. a16-serial-uART using a finger print scanner
 
@@ -79,7 +79,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 1. a20-gps
 
 
-1.
+1. a21-fake-analog using a digital read pin
 
 
 1.
