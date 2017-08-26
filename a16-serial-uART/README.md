@@ -3,9 +3,9 @@
 Before flashing the .ino file to your photon remember to go to the FPS library and include  .cpp and .h files into your project.
 
 
-<a href="url"> <img src="fps-image.jpg" width="200px" > </a> 
-<a href="url"> <img src="fps-image2.jpg" width="200px" > </a> 
-<a href="url"> <img src="fps-image3.jpg" width="200px" > </a> 
+<a href="fps-image.jpg"> <img src="fps-image.jpg" width="200px" > </a> 
+<a href="fps-image2.jpg"> <img src="fps-image2.jpg" width="200px" > </a> 
+<a href="fps-image3.jpg"> <img src="fps-image3.jpg" width="200px" > </a> 
 
 If you like the 3D printed case you can probably find it on my github 3D printing location at
 
