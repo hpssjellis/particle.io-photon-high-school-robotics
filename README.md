@@ -47,7 +47,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a05-tinker](https://youtu.be/o0E6YIIJ4_Y?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) A quick look at the tinker program that is part of the Particle android or IOs Apps
 
-1. [a06-web-app](https://youtu.be/NocvWycfz2o?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) A web page replacement for the Tinker App. You can edit the web page to look and control any pins on the Photon
+1. [a06-web-app](https://youtu.be/NocvWycfz2o?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) A web page replacement for the Tinker App. You can edit the web page to look and control any pins on the Photon. View the generic working web app at [https://hpssjellis.github.io/particle.io-photon-high-school-robotics/](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/)
 
 1. [A07-mobile-App](https://youtu.be/nR8pwlmnSJU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). Once you have a working web page you can then convert the web page into a Free Android (or IOS for $100 per year !) That can be installed on your android phone using [Phonegap Build](https://build.phonegap.com)
 
