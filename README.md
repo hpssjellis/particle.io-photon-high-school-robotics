@@ -62,9 +62,25 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Just proving that a [Pololu stepper motor](https://www.pololu.com/product/1204) with [Pololu stepper driver](https://www.pololu.com/product/2134) works. You should try to program it to do more fancy things.
 
-1.
+1. [a13-arduino](https://youtu.be/VYskWeBI9Os?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). When Wifi is bad make your Photon switch between Photon normal behaviour and Non-Wifi Arduino normal behaviour.
+
+1. a14-serial-I2C using Groove OLED
+
+1. a15-serial-SPI using the Pixy
+
+1. a16-serial-uART using a finger print scanner
+
+1. a17 rangefinder
+
+1. a18-fslp pressure strip
+
+1. a19-accelerometer
+
+1. a20-gps
+
 
 1.
+
 
 1.
 
@@ -78,7 +94,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-.
+1. [The IoT rant](https://youtu.be/1ZYcCXPAMPo?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) When I first started researching Roboitcs for the classroom I looked into what other teachers were doing with Lego Mindstorms, VEX robotics, I had messed around with Stamp micro-controllers and new about Arduino's and the Raspberry Pi's. I found out about the Particle.io Photon predecessor the Spark Core and purchased it and started working with it but was really frustrated by all the weird issues surrounding learning robotics. However, as a multi-year computer programming teacher I was really impressed with the online IDE https://build.particle.io/ and the ability to flash code wirelessly since installing software into school computers has always been a frustrating route.
+
+Enjoy the rant.
 
 
 
