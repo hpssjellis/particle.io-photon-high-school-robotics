@@ -58,7 +58,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a10-transistor](https://youtu.be/S6xwStw-t1U?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr). Using a PNP transistor to protect the Photon while controlling a more powerful circuit
 
-1. [a11-DC-motor-drivers](https://youtu.be/-LZL-XpIsHs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) For DC motors I would like you to use the web-app.ino and web-app.html to control both the dual motor driver and the big motor driver. I have included some check programs to make sure your connections are working.
+1. [a11-DC-motor-drivers](https://youtu.be/-LZL-XpIsHs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) For DC motors I would like you to use the web-app.ino and web-app.html to control both the [dual motor driver](https://www.pololu.com/product/713) to 13.5 V max and 1.2 Amp Max 
+
+and the [big motor driver](https://www.pololu.com/product/1451) To 24V Max and 12 Amp Max . I have included some check programs to make sure your connections are working.
 
 1. [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) Just proving that a [Pololu stepper motor](https://www.pololu.com/product/1204) with [Pololu stepper driver](https://www.pololu.com/product/2134) works. You should try to program it to do more fancy things.
 
