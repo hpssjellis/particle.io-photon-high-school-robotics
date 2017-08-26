@@ -10,8 +10,8 @@ int wow = 2;   // just seems to need an integer
 #include "TPixy.h"
 
 // SPI pins on the photon
-// See images on github at 
-//   https://github.com/hpssjellis/particle.io-photon-high-school-robotics/new/master
+// See connection images on github at 
+//   https://github.com/hpssjellis/particle.io-photon-high-school-robotics/tree/master/a15-serial-SPI
 
 
 // VIN
