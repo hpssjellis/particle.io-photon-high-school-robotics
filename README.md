@@ -70,19 +70,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. [a16-serial-uART using a finger print scanner](https://youtu.be/GDRUk4ICt48?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) purchased from [sparkfun.com](https://www.sparkfun.com/products/13007)
 
-1. a17 rangefinder
-
-1. a18-fslp pressure strip
-
-1. a19-accelerometer
-
-1. a20-gps
 
 
-1. a21-fake-analog using a digital read pin
 
-
-1.
 
 1. Advanced Rasperry PI [video at](https://www.youtube.com/watch?v=h5NnSbo351I&index=1&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=25s) has it's own github site at https://github.com/hpssjellis/particle-photon-raspberry-pi-iot
 
