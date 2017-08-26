@@ -10,7 +10,7 @@ no .cpp files needed for this project :>
 
 Flash the code and make the connections to your pixy.
 
-![](pixy connector.png)
+![](pixy-connector.png)
 
 
 The pixy must be trained on a colour 
