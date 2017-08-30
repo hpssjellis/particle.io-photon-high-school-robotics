@@ -1,5 +1,5 @@
 # Minimal Price List for a Photon based Robotics course 
-Aug 2017 USD costs
+Aug 2017 USD or CDN costs
 (Multiply CDN x 1.25 to get USD)
 
 A work in progress
