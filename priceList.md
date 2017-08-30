@@ -38,7 +38,7 @@ x 15 for a class of 30 student Total =
 
 1. 
 
-1. Capacitive Touch	1	RB-Dfr-27	http://www.robotshop.com/en/at42qt1010-capacitive-touch-breakout.html	$7.95
+1. Capacitive Touch	[RB-Dfr-27](	http://www.robotshop.com/en/at42qt1010-capacitive-touch-breakout.html)	$7.95
 
 Total cost = 
 
