@@ -21,9 +21,9 @@ A work in progress
 
 1. [DC motor](https://www.pololu.com/product/3225)
 
-1. Rangefinder Ultrasonic	[RB-Ite-54]	(http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
+1. Rangefinder Ultrasonic	[RB-Ite-54](http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
 
-1. Grove OLED 0.96"	[104030008]	(http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
+1. Grove OLED 0.96"	[104030008](http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
 
 
 Total =   
@@ -60,13 +60,13 @@ x 15 for a class of 30 student Total =
 
 
 1. Slide Potentiometer	[RB-See-229](	http://www.robotshop.com/ca/en/grove-slide-potentiometer.html)	$7.56
-1. Sound sensor	[RB-Wav-26](	http://www.robotshop.com/ca/en/sound-sensor.html)	$4.99
-1. Moisture	[RB-Dfr-161](	http://www.robotshop.com/en/dfrobot-moisture-sensor.html)	$4.80
-1. Ultrasonic	[RB-Ite-54](	http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
-1. Accelerometer	[RB-Das-16](	http://www.robotshop.com/ca/en/hovis-gyro-accelerometer-sensor.html)	$38.46
-1. NFC tag	[RB-Sol-40](	http://www.robotshop.com/ca/en/serial-to-nfc-converter-module.html)	$21.54
-1. Barometer	[RB-Dfr-611](	http://www.robotshop.com/ca/en/bmp180-barometer-module.html)	$9.62
-1. Fingerprint scanner	[RB-Spa-80](3	http://www.robotshop.com/ca/en/fingerprint-scanner-5v-ttl.html)	$64.04
+1. Sound sensor	[RB-Wav-26](http://www.robotshop.com/ca/en/sound-sensor.html)	$4.99
+1. Moisture	[RB-Dfr-161](http://www.robotshop.com/en/dfrobot-moisture-sensor.html)	$4.80
+1. Ultrasonic	[RB-Ite-54]](http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
+1. Accelerometer	[RB-Das-16](http://www.robotshop.com/ca/en/hovis-gyro-accelerometer-sensor.html)	$38.46
+1. NFC tag	[RB-Sol-40](http://www.robotshop.com/ca/en/serial-to-nfc-converter-module.html)	$21.54
+1. Barometer	[RB-Dfr-611](http://www.robotshop.com/ca/en/bmp180-barometer-module.html)	$9.62
+1. Fingerprint scanner	[RB-Spa-803](http://www.robotshop.com/ca/en/fingerprint-scanner-5v-ttl.html)	$64.04
 
 
 
