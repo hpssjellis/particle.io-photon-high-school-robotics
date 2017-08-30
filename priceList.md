@@ -40,14 +40,14 @@ x 15 for a class of 30 student Total =
 1. GPS 	[113020003]	(http://www.seeedstudio.com/depot/Grove-GPS-p-959.html)	$29.90 
 
 
-1. [Triple axis Gyro from Sparkfun through Amazon]  (https://www.amazon.com/Triple-Axis-Accelerometer-Breakout-ADXL362/dp/B00AEOGDFS/ref=sr_1_1?s=industrial&ie=UTF8&qid=1504075018&sr=1-1&keywords=SparkFun+Triple+Axis+Accelerometer+Breakout+%28ADXL362%29) This was one of the hardest sensors to get going I think this was the forth different one I tried. I hope to post the code eventually.
+1. [Triple axis Gyro from Sparkfun through Amazon](https://www.amazon.com/Triple-Axis-Accelerometer-Breakout-ADXL362/dp/B00AEOGDFS/ref=sr_1_1?s=industrial&ie=UTF8&qid=1504075018&sr=1-1&keywords=SparkFun+Triple+Axis+Accelerometer+Breakout+%28ADXL362%29) This was one of the hardest sensors to get going I think this was the forth different one I tried. I hope to post the code eventually.
 
 
 1. Capacitive Touch	[RB-Dfr-27](	http://www.robotshop.com/en/at42qt1010-capacitive-touch-breakout.html)	$7.95
 
 1. Flex sensor		[RB-Spa-989](http://www.robotshop.com/ca/en/22-10k-flexible-sensor.html)	shop	$10.19
 
-1. Hall Effect Sensor (Magnetic)		[RB-Spa-251]	(http://www.robotshop.com/ca/en/hall-effect-sensor.html)	$1.22
+1. Hall Effect Sensor (Magnetic)		[RB-Spa-251](http://www.robotshop.com/ca/en/hall-effect-sensor.html)	$1.22
 
 
 
