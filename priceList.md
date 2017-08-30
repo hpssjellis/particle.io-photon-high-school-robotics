@@ -11,15 +11,15 @@ A work in progress
 
 1. [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.ca/Elenco-SC-750-Snap-Circuits-Extreme/dp/B0002AHQWS)
 
-1. 10 Snap to pin cables
+1. [10 Snap to pin cables](https://www.amazon.ca/Snap-Circuits-SCJW10-Project-Connectors/dp/B013DA8XH0/ref=sr_1_fkmr0_1?s=toys&ie=UTF8&qid=1504073209&sr=1-1-fkmr0&keywords=snapcircuits+10+Snap+to+pin+cables)
 
-1. Servo motor
+1. [Servo motor](https://www.pololu.com/product/1057)
 
-1. Stepper Motor and Driver
+1. [Stepper Motor](https://www.pololu.com/product/1204) and Driver
 
-1. Dual and big DC motor drivers
+1. [Dual](https://www.pololu.com/product/2135) and [big](https://www.pololu.com/product/1451) DC motor drivers
 
-1. DC motor
+1. [DC motor](https://www.pololu.com/product/3225)
 
 1. Rangefinder
 
@@ -38,13 +38,13 @@ x 15 for a class of 30 student Total =
 
 1. 
 
-
+1. Capacitive Touch	1	RB-Dfr-27	http://www.robotshop.com/en/at42qt1010-capacitive-touch-breakout.html	$7.95
 
 Total cost = 
 
 
 
-1. 3D Printer I have the Tinkerine and a 12x12x12 Raise3D N2 but any working 3D Printer would be fine.
+1. 3D Printer I have the [Tinkerine](https://store.tinkerine.com/) and a 12x12x12 [Raise3D N2 V2])(https://www.amazon.com/Raise3D-Plus-Printer-Dual-Extruder/dp/B01N3982HD) but any working 3D Printer would be fine.
 
 
 
