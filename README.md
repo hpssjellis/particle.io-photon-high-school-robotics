@@ -37,6 +37,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 ## List of Videos
 
+
+.1 [a00-intro](https://youtu.be/bOPonnhGOUg?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) An introduction to teaching robotics using the Particle.io Photon
+
 1. [a01-console:](https://youtu.be/chaqZgd_6Vs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)  A simple console program to get things started. No webpage needed. outputs A0 to the console. Then uses a GND (black), 3V3 (red) , SIG (yellow) sensor in this case a [slide potentiometer](https://www.seeedstudio.com/Grove-Slide-Potentiometer-p-1196.html) (variable resitor).
 
 1. [a02-voltage-divider:](https://youtu.be/ARvSD5UfkQE?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr)  Using a voltage divider to better control the output of a 2 prong sensor in this case a [SNAP circuit photoresistor](http://www.elenco.com/product/productdetails/snap_circuits&amp%3Breg_parts=MTAw/photosensitive_resistor=ODE4)
