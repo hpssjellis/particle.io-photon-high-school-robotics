@@ -1,6 +1,7 @@
 # Minimal Price List for a Photon based Robotics course 
 Aug 2017 USD costs
 
+A work in progress
 
 
 ### Per two students
