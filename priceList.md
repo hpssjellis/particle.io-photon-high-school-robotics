@@ -7,9 +7,9 @@ A work in progress
 
 ### Per two students
 
-1. Photon Kit 
+1. [Photon Kit](https://store.particle.io/products/photon-kit)
 
-1. Elenco-SC-750-Snap-Circuits-Extreme
+1. [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.ca/Elenco-SC-750-Snap-Circuits-Extreme/dp/B0002AHQWS)
 
 1. 10 Snap to pin cables
 
