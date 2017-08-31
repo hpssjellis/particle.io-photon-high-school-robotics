@@ -14,9 +14,9 @@ void setup() {
 void loop() {
     digitalWrite(D2, 0);  // pick a direction
     
-    digitalWrite(D3, 1);  // do a step
+    digitalWrite(D3, 1);  // do a step by setting the pulse high
     delay(3);             // wait 3 ms
     
-    digitalWrite(D3, 0);  // reset step or does it also step?
+    digitalWrite(D3, 0);  // a pulse needs to come donwn so set it low.
     delay(3);             // wait 3 ms
 }
