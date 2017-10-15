@@ -20,7 +20,7 @@
   <!-- all platforms -->
     
   <preference name='phonegap-version' value='cli-7.0.1' />
-  <preference name='pgb-builder-version' value='1' />   
+  <preference name='pgb-builder-version' value='2' />   
     
 
  <!--  older versions that worked
