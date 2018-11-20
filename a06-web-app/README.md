@@ -43,3 +43,13 @@ https://build.phonegap.com
 1. New App, copy your github URL, Build your app, use the QR-code to download, install and test it on an Android phone (Or pay the $100 to Apple to test an IOs App)
 
 
+
+
+
+#if (PLATFORM_ID == 31) 
+  // only compile following Raspberry PI stuff
+#endif  
+  
+Wifi ARGON 12
+Bluetooth BORON 13
+Cellular XENON 14
