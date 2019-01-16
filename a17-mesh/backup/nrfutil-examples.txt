@@ -1,0 +1,32 @@
+must pre-make the directory output and outputBoot
+
+
+
+nrfutil pkg generate --hw-version 52 --sd-req 0x80 --bootloader-version 4 --bootloader nrf52840_xxaa.hex --key-file private.pem output/nrf52840_xxaa.zip
+
+nrfutil pkg generate --hw-version 52 --sd-req 0x80 --application-version 4 --application nrf52840_xxaa.hex --key-file private.pem output/nrf52840_xxaa.zip
+
+nrfutil pkg display nrf52840_xxaa.zip
+
+unzip nrf52840_xxaa.1.zip -d cool2
+
+
+nrfutil pkg generate --debug-mode --hw-version 52 --sd-req 0x80 --bootloader-version 4 --bootloader nrf52840_xxaa.hex --key-file private.pem outputBoot/nrf52840_xxaa.zip
+
+nrfutil pkg generate --debug-mode --hw-version 52 --sd-req 0x80  --application nrf52840_xxaa.hex --key-file private.pem outputBoot/nrf52840_xxaa.zip
+
+
+
+nrfutil pkg display nrf52840_xxaa.zip
+
+
+nrfutil dfu usb_serial --help
+
+
+These work
+
+nrfutil settings display settings.hex
+
+
+nrfutil settings generate --family NRF52840 --application nrf52840_xxaa.1.hex --application-version 3 --bootloader-version 2 --bl-settings-version 1 settings.hex
+
