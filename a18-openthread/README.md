@@ -36,13 +36,20 @@ https://openthread.io/guides/border-router
 (If you know how to do things in other ways, such as making new directories then do what you know)
 
 ```bash
-cd ~    
+cd ~  
+
 mkdir openthread-everything
+
 cd openthread-everything
+
 git clone https://github.com/openthread/openthread.git
+
 git clone https://github.com/openthread/borderrouter.git
+
 git clone https://github.com/openthread/wpantund.git
+
 git clone https://github.com/openthread/pyspinel.git
+
 
 // Let install wpantund first
 cd wpantund
