@@ -35,7 +35,7 @@ https://openthread.io/guides/border-router
 
 (If you know how to do things in other ways, such as making new directories then do what you know)
 
-```console
+```bash
 cd ~    
 mkdir openthread-everything
 cd openthread-everything
