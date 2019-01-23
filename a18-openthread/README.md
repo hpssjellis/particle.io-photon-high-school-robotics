@@ -17,6 +17,10 @@ What took a while to find out:
 
 [PySpinel](https://github.com/openthread/pyspinel) seems to be a python program that either makes Drivers or does kind of what wpantund does but in python.
 
+You will also need [nrf-Conect for desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) (Look for the pull down on the right that says "platform" looks like an Ad.) for windows, Linux or Mac to transfer the openthread .hex files to your nrf52840 usb dongle
+
+You might need for more advanced programming [nrfutil]() For windows grab the top laatest release from https://github.com/NordicSemiconductor/pc-nrfutil/releases 
+
 
 **Tutorials about openthread**
 
@@ -31,11 +35,38 @@ https://openthread.io/guides/border-router
 
 (If you know how to do things in other ways, such as making new directories then do what you know)
 
+```console
 cd ~    
 mkdir openthread-everything
 cd openthread-everything
 git clone https://github.com/openthread/openthread.git
+git clone https://github.com/openthread/borderrouter.git
+git clone https://github.com/openthread/wpantund.git
+git clone https://github.com/openthread/pyspinel.git
+
+// Let install wpantund first
+cd wpantund
+
+
+
+// Lets install the Border Router. Note: This program automatically starts after being rebooted.
+cd ~/openthread
+cd borderrouter
+./script/bootstrap
+./script/setup
+
+// plug in your nrf52840 usb dongle
+ls /dev/tty*
+ls /dev/ttyA*    // should show ttyACM0  or ttyACM1 etc
+
+find -iname wpantund.conf   // should be in /etc/wpantund.conf
+sudo nano /etc/wpantund.conf   // edit Config:NCP:SocketPath "/dev/ttyACM0"
+^x      // to exit and save the file
 
 
 
 
+
+
+
+```
