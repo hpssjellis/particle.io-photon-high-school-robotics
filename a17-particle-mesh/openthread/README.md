@@ -33,46 +33,7 @@ https://openthread.io/guides/border-router
 
 **Installing all of them on 64 bit Linux (I am using Ubuntu 18.04)**
 
-(If you know how to do things in other ways, such as making new directories then do what you know)
-
-```bash
-cd ~  
-
-mkdir openthread-everything
-
-cd openthread-everything
-
-git clone https://github.com/openthread/openthread.git
-
-git clone https://github.com/openthread/borderrouter.git
-
-git clone https://github.com/openthread/wpantund.git
-
-git clone https://github.com/openthread/pyspinel.git
-
-
-// Let install wpantund first
-cd wpantund
-
-
-
-// Lets install the Border Router. Note: This program automatically starts after being rebooted.
-cd ~/openthread
-cd borderrouter
-./script/bootstrap
-./script/setup
-
-// plug in your nrf52840 usb dongle
-ls /dev/tty*
-ls /dev/ttyA*    // should show ttyACM0  or ttyACM1 etc
-
-find -iname wpantund.conf   // should be in /etc/wpantund.conf
-sudo nano /etc/wpantund.conf   // edit Config:NCP:SocketPath "/dev/ttyACM0"
-^x      // to exit and save the file
-
-
-
-
+Follow this link [https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html)
 
 
 
