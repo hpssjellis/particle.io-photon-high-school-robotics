@@ -1,6 +1,6 @@
 
 
-*** OpenThread Installation instructions [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html) ***
+***OpenThread Installation instructions [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html)***
 
 
 OpenThread by Google Nest is the networking protocol the Particle Mesh devices are lossely based on.
