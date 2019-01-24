@@ -1,5 +1,8 @@
 
 
+*** OpenThread Installation instructions [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html) ***
+
+
 OpenThread by Google Nest is the networking protocol the Particle Mesh devices are lossely based on.
 You can purchase the nrf52840 USB Dongle fully installed with the ncp (firmware needed for it to run OpenThreadd) from [seedstudio-nrf52840-mdk-usb-dongle](https://www.robotshop.com/ca/en/seeedstudio-nrf52840-mdk-usb-dongle.html) 
 
