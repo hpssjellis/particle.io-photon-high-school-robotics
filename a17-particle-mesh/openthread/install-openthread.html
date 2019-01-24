@@ -104,9 +104,10 @@ You might have to try differenty usb ports for your nrf52840 USB Dongle
 sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0</textarea><br>
    
    
-Now start wpanctl to control wpantund    .  . . .      (how to start wpan0 and wpan1)
+Now start wpanctl to control wpantund using the wpan0 name above if you have a different nrf52840 
+  you can setup another wpantund and ctl using ttyACM1 and wpan1 
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-sudo /usr/local/bin/wpanctl</textarea><br>
+sudo /usr/local/bin/wpanctl -I wpan0</textarea><br>
    
            
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
@@ -131,7 +132,7 @@ setprop NetworkKey --data 000102030405060708090a0b0c0d0e0f</textarea><br>
 form "MyCoolNetwork" -c 26</textarea><br>
    
    
-           
+// allow joining this network for 1 hour = 3600 seconds<br>           
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 permit-join 3600 22</textarea><br>
    
