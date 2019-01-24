@@ -75,8 +75,10 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. a17-particle-mesh working on it Jan 2019. Check it out as interesting things are added as they are understood.
 
+----------------------------------------------------------------------------------------------------------------------------
 
 
+**Extra**
 1. Advanced Rasperry PI [video at](https://www.youtube.com/watch?v=h5NnSbo351I&index=1&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=25s) has it's own github site at https://github.com/hpssjellis/particle-photon-raspberry-pi-iot
 
 
@@ -88,8 +90,11 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 1. [The IoT rant](https://youtu.be/1ZYcCXPAMPo?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) When I first started researching Roboitcs for the classroom I looked into what other teachers were doing with Lego Mindstorms, VEX robotics, I had messed around with Stamp micro-controllers and new about Arduino's and the Raspberry Pi's. I found out about the Particle.io Photon predecessor the Spark Core and purchased it and started working with it but was really frustrated by all the weird issues surrounding learning robotics. However, as a multi-year computer programming teacher I was really impressed with the online IDE https://build.particle.io/ and the ability to flash code wirelessly since installing software into school computers has always been a frustrating route.
+Website for the video [here](https://www.rocksetta.com/spark-core-photon/iot-rant/)
 
 Enjoy the rant.
+
+Recently I feel like making another rant about the new particle mesh devices since they don't connect with OpenThread as easily as I thought they would.
 
 
 
