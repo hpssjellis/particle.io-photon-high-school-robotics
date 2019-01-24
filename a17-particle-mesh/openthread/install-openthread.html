@@ -106,24 +106,54 @@ Now start wpanctl to control wpantund    .  . . .      (how to start wpan0 and w
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 sudo /usr/local/bin/wpanctl</textarea><br>
    
-   
            
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
-   
-   
+help</textarea><br>
+  
+    
+ // plug in other nrf52840's if you have them<br>          
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+scan</textarea><br>
+    
+  
+   use your networkmaster key 000102030405060708090a0b0c0d0e0f
            
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
-   
-   
-           
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+setprop NetworkKey --data 000102030405060708090a0b0c0d0e0f</textarea><br>
    
 
-  
-  
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+form "MyCoolNetwork" -c 26</textarea><br>
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+permit-join 3600 22</textarea><br>
+   
+      
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+status</textarea><br>
+   
+   
+ 
+   
+     
+Have a look at all the properties           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+getprop -a</textarea><br>
+   
+   
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+   
+   
   
   
   
