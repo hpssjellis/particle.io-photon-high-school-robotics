@@ -17,62 +17,113 @@ cd ~</textarea><br>
   
   
 <li><textarea  style="background-color:black; color:yellow; width:90%;  "  rows=1  readonly>
-mkdir openthread-everything</textarea><br>
+mkdir ot-all</textarea><br>
   
 <li><textarea  style="background-color:black; color:yellow; width:90%;"  rows=1  readonly>
-cd openthread-everything</textarea><br>  
+cd ot-all</textarea><br>  
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+git clone https://github.com/openthread/openthread.git</textarea><br>
   
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+git clone https://github.com/openthread/borderrouter.git</textarea><br>
   
+   
   
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+git clone https://github.com/openthread/wpantund.git</textarea><br>
   
+    
+    
   
-<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=10   readonly>
-git clone https://github.com/openthread/openthread.git
-
-git clone https://github.com/openthread/borderrouter.git
-
-git clone https://github.com/openthread/wpantund.git
-
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 git clone https://github.com/openthread/pyspinel.git</textarea><br>
+     
+  
+  
+  
+  
+  
+  <h2>// Let's install wpantund first</h2>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+cd wpantund</textarea><br>
+     
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+   
+  
+ <hr>    
 
+  <h2>// Lets install the Border Router. Note: This program automatically starts after being rebooted.</h2>   
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+cd ~/ot-all/borderrouter</textarea><br>
+        
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+./script/bootstrap</textarea><br>
+   
+      
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+./script/setup</textarea><br>
+  
+ // plug in your nrf52840 usb dongle<br>            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+ls /dev/tty*</textarea><br>
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+ls /dev/tty*</textarea><br>
+ 
+  --or--
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+ls /dev/ttyA*</textarea><br>
+   
 
+//Edit wpantund.conf  ......    should be in /etc/wpantund.conf     <br>      
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+find -iname wpantund.conf   </textarea><br>
+   
 
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+sudo nano /etc/wpantund.conf</textarea><br>
+   
+<br> Edit<br>
 
+  
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+Config:NCP:SocketPath "/dev/ttyACM0"</textarea><br>
+  
+  ^x to exit nano
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
 
-
-git clone https://github.com/openthread/openthread.git
-
-git clone https://github.com/openthread/borderrouter.git
-
-git clone https://github.com/openthread/wpantund.git
-
-git clone https://github.com/openthread/pyspinel.git
-
-
-// Let install wpantund first
-cd wpantund
-
-
-
-// Lets install the Border Router. Note: This program automatically starts after being rebooted.
-cd ~/openthread
-cd borderrouter
-./script/bootstrap
-./script/setup
-
-// plug in your nrf52840 usb dongle
-ls /dev/tty*
-ls /dev/ttyA*    // should show ttyACM0  or ttyACM1 etc
-
-find -iname wpantund.conf   // should be in /etc/wpantund.conf
-sudo nano /etc/wpantund.conf   // edit Config:NCP:SocketPath "/dev/ttyACM0"
-^x      // to exit and save the file
 
 
 
