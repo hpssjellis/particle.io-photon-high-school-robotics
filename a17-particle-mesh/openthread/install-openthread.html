@@ -21,22 +21,20 @@ mkdir ot-all</textarea><br>
   
 <li><textarea  style="background-color:black; color:yellow; width:90%;"  rows=1  readonly>
 cd ot-all</textarea><br>  
+     
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-git clone https://github.com/openthread/openthread.git</textarea><br>
-  
+git clone https://github.com/openthread/wpantund.git</textarea><br>
+    
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 git clone https://github.com/openthread/borderrouter.git</textarea><br>
   
-   
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-git clone https://github.com/openthread/wpantund.git</textarea><br>
-  
-    
-    
-  
+git clone https://github.com/openthread/openthread.git</textarea><br>
+
+ 
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 git clone https://github.com/openthread/pyspinel.git</textarea><br>
      
@@ -45,31 +43,101 @@ git clone https://github.com/openthread/pyspinel.git</textarea><br>
   
   
   
-  <h2>// Let's install wpantund first</h2>
+<h2>// Let's install wpantund first</h2>
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-cd wpantund</textarea><br>
+cd ~/ot-all/wpantund</textarea><br>
      
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+sudo apt-get update</textarea><br>
    
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+sudo apt-get install dbus libreadline</textarea><br>
      
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev</textarea><br>
      
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+git checkout full/latest-release</textarea><br>
      
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
-</textarea><br>
+sudo apt-get install libtool autoconf autoconf-archive</textarea><br>
      
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
 </textarea><br>
    
+ 
+  
+  
+  
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+ ./bootstrap.sh </textarea><br>
    
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+./configure --sysconfdir=/etc</textarea><br>
+   
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+make</textarea><br>
+   
+     
+This install it on your computer           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+sudo make install</textarea><br>
+   
+  <b>Now start wpantund assuming /dev/ttyACM0  might also be /dev/ttyUSB0  or ACM1  or ACM2</b><br>
+  
+You might have to try differenty usb ports for your nrf52840 USB Dongle
+  
+  
+     
+ Start the background daemon<br>          
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0</textarea><br>
+   
+   
+Now start wpanctl to control wpantund    .  . . .      (how to start wpan0 and wpan1)
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+sudo /usr/local/bin/wpanctl</textarea><br>
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+</textarea><br>
+   
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
  <hr>    
 
