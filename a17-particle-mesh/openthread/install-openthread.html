@@ -14,6 +14,9 @@ function mySelectAll(myThis){
 <h2 align=center>Installing OpenThread on a Linux Computer (I used Ubuntu version 18.04).</h2>
   
   
+  <b color=red>On this site single click black boxes to copy then on the command line either right-click or right-click-paste often on linux command line  ctrl-v does not work</b>
+  
+  
   Checkout the github  at <a href="https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/">https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/</a>  
 <br>
 
@@ -52,15 +55,15 @@ cd ~/openthread-all</textarea><br>
 git clone https://github.com/openthread/wpantund.git</textarea><br>
     
   
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 git clone https://github.com/openthread/borderrouter.git</textarea><br>
   
   
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 git clone https://github.com/openthread/openthread.git</textarea><br>
 
  
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 git clone https://github.com/openthread/pyspinel.git</textarea><br>
      
   
@@ -69,27 +72,27 @@ git clone https://github.com/openthread/pyspinel.git</textarea><br>
   
   
 <h2>// Let's install wpantund first</h2>
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 cd ~/openthread-all/wpantund</textarea><br>
      
   
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo apt-get update</textarea><br>
    
   
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo apt-get install dbus libreadline</textarea><br>
      
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev</textarea><br>
      
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 git checkout full/latest-release</textarea><br>
      
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo apt-get install libtool autoconf autoconf-archive</textarea><br>
      
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
    
  
@@ -98,22 +101,22 @@ sudo apt-get install libtool autoconf autoconf-archive</textarea><br>
   
      
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
  ./bootstrap.sh </textarea><br>
    
      
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 ./configure --sysconfdir=/etc</textarea><br>
    
      
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 make</textarea><br>
    
      
 This install it on your computer           
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo make install</textarea><br>
    
   <b>Now start wpantund assuming /dev/ttyACM0  might also be /dev/ttyUSB0  or ACM1  or ACM2</b><br>
@@ -123,45 +126,45 @@ You might have to try differenty usb ports for your nrf52840 USB Dongle
   
      
  Start the background daemon<br>          
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0</textarea><br>
    
    
 Now start wpanctl to control wpantund using the wpan0 name above if you have a different nrf52840 
   you can setup another wpantund and ctl using ttyACM1 and wpan1 
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo /usr/local/bin/wpanctl -I wpan0</textarea><br>
    
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 help</textarea><br>
   
     
  // plug in other nrf52840's if you have them<br>          
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 scan</textarea><br>
     
   
    use your networkmaster key 000102030405060708090a0b0c0d0e0f
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 setprop NetworkKey --data 000102030405060708090a0b0c0d0e0f</textarea><br>
    
 
    
    
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 form "MyCoolNetwork" -c 26</textarea><br>
    
    
 // allow joining this network for 1 hour = 3600 seconds<br>           
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 permit-join 3600 22</textarea><br>
    
       
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 status</textarea><br>
    
    
@@ -169,13 +172,13 @@ status</textarea><br>
    
      
 Have a look at all the properties           
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 getprop -a</textarea><br>
    
    
      
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
    
    
@@ -198,51 +201,51 @@ getprop -a</textarea><br>
  <hr>    
 
   <h2>// Lets install the Border Router. Note: This program automatically starts after being rebooted.</h2>   
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 cd ~/openthread-all/borderrouter</textarea><br>
         
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 ./script/bootstrap</textarea><br>
    
       
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 ./script/setup</textarea><br>
   
  // plug in your nrf52840 usb dongle<br>            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 ls /dev/tty*</textarea><br>
            
  
   --or--
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 ls /dev/ttyA*</textarea><br>
    
 
 //Edit wpantund.conf  ......    should be in /etc/wpantund.conf     <br>      
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 find -iname wpantund.conf   </textarea><br>
    
 
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo nano /etc/wpantund.conf</textarea><br>
    
 <br> Edit<br>
 
   
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 Config:NCP:SocketPath "/dev/ttyACM0"</textarea><br>
   
   ^x to exit nano
    
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
    
            
-<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
    
   
