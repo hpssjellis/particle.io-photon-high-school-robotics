@@ -1,6 +1,18 @@
 <body bgcolor="darkgreen">
+  
+ <script>
+function mySelectAll(myThis){
+   myThis.focus();
+   myThis.select();
+   document.execCommand("Copy");
+}
+</script> 
+  
+  
+  
+  
 
-<h2 align=center>Installing OpenThread on a Linux Computer (I used Ubuntu version 18.04)</h2>
+<h2 align=center>Installing OpenThread on a Linux Computer (I used Ubuntu version 18.04)....</h2>
   
   
   Checkout the github  at <a href="https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/">https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/</a>  
@@ -11,7 +23,7 @@
   
 You must do this command before it will run: <br>
     
-<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=1 readonly>
+<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=1 readonly onfocus(mySelectAll(this))>
 sudo chmod a+x  openthread-install-all.sh</textarea><br>
   
   
