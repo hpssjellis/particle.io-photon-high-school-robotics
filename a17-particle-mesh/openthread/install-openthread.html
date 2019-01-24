@@ -3,7 +3,7 @@
  <script>
 function mySelectAll(myThis){
   alert(myThis.value)
-   myThis.focus();
+
    myThis.select();
    document.execCommand('Copy');
 }
@@ -24,7 +24,7 @@ function mySelectAll(myThis){
   
 You must do this command before it will run: <br>
     
-<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=1 readonly onfocus="{alert()}">
+<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=1 readonly onfocus="{mySelectAll(this)}">
 sudo chmod a+x  openthread-install-all.sh</textarea><br>
   
   
