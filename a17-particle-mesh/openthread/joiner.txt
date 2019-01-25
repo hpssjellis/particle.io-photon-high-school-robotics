@@ -24,3 +24,12 @@ Done
 > Join success                                                                  
 > panid                                                                         
 5656        
+
+
+
+
+indrapanwar commented on Jan 22, 2018 • 
+@kyberpunk : Thank you . I will go through the issue. I created network by ot-ncp-ftd (TMF=1,BORDERROUTER=1,JOINER=1) and ot-cli-ftd (JOINER=1) could join the network through out-band commissioning. I could ping border router from CLI.
+
+
+
