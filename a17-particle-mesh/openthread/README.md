@@ -6,6 +6,8 @@
 OpenThread by Google Nest is the networking protocol the Particle Mesh devices are lossely based on.
 You can purchase the nrf52840 USB Dongle fully installed with the ncp (firmware needed for it to run OpenThreadd) from [seedstudio-nrf52840-mdk-usb-dongle](https://www.robotshop.com/ca/en/seeedstudio-nrf52840-mdk-usb-dongle.html) 
 
+and the firmware for these dongles if you brick them is at https://github.com/makerdiary/nrf52840-mdk-usb-dongle/tree/master/firmware
+
 **Here is what I have found out about OpenThread.**
 
 The Github is at: https://github.com/openthread
