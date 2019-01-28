@@ -38,6 +38,9 @@ https://codelabs.developers.google.com/codelabs/openthread-hardware/#0
 https://openthread.io/guides/border-router
 
 
+The Client is a command line interface that uses the ot-cli-ftd.hex firmware. A full reference is https://github.com/openthread/openthread/tree/master/src/cli and example use is here https://github.com/openthread/openthread/tree/master/examples/apps/cli
+
+
 **Installing all of them on 64 bit Linux (I am using Ubuntu 18.04)**
 
 Same link as at the top of this page. Follow this link [https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html)
