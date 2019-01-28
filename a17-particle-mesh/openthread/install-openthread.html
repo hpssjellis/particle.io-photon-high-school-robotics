@@ -302,7 +302,7 @@ Config:NCP:SocketPath "/dev/ttyACM0"</textarea><br>
   
   ^x to exit nano
    
-Reboot the computer.
+Reboot the computer!
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo systemctl status avahi-daemon.service</textarea><br>
@@ -319,9 +319,20 @@ sudo systemctl status otbr-web.service</textarea><br>
 sudo systemctl status wpantund.service</textarea><br>
               
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
-sudo systemctl status ????? I think therre is a nat64  status as well</textarea><br>
+sudo systemctl status ????? I think there is a nat64  status as well</textarea><br>
    
+Now is probably a good time to test both the <a href="https://play.google.com/store/apps/details?id=org.threadgroup.commissioner&hl=en">Thread Commissionning App</a>
+  and the Web Gui. On the Docker you can set the Web GUI IP, but I don't know how to do that with the installed one so I just use "localhost" 
+  and randomly it works.<br>
+  On the web Gui always check the status, when things are not working it is very bleak, 3 entries that kind of say it isn't working, 
+  When it is working there are several entries and important information here. Also check the Join button, if you have any particle Argons
+  up and running they may show up there. Try the form button. I have been told to change all the entries except that last one
+  not sure if that is relevant information but do record the password as that is needed for the Thread App.<br><br>
   
+  Note: The Thread Commissioning app retains information that messes up other setups so go into Apps, Settings, stoarge and clear things, 
+  then close the App or force stop before trying with a new thread network.<br>
+  
+  I have huge problems getting past the Thread App admin password, have done it a few times. Not sure what I am doing wrong.<br>
   
   <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
