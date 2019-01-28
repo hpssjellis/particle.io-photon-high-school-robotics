@@ -250,7 +250,16 @@ This Dongle firmware remembers your data fairly well so if you want to start fro
 sudo wpanctl -I wpan0 reset </textarea><br>   
 
   
+ <hr> 
+  
+ It gets confusing weather to use wpantund with theot-ncp-ftd.hex firmware on the USB dongle  or screen with the ot-cli-ftd.hex firmware 
+  If you want to reset a dongle using screen the command is
  <br><br> 
+ <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+ factoryreset</textarea><br> 
+ 
+  
+  
   
 
 Now find out the /dev/ttyACM? of your other CLI Dongles. Then use the screen program to activate the clients with Join ability    <br>     
