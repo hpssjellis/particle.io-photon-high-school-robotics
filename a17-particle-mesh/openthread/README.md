@@ -40,6 +40,10 @@ https://openthread.io/guides/border-router
 
 The Client is a command line interface that uses the ot-cli-ftd.hex firmware. A full reference is https://github.com/openthread/openthread/tree/master/src/cli and example use is here https://github.com/openthread/openthread/tree/master/examples/apps/cli
 
+More commssioner stuff herre
+https://electronut.in/nrf52840-thread/
+
+
 
 **Installing all of them on 64 bit Linux (I am using Ubuntu 18.04)**
 
