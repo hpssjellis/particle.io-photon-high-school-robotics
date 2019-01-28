@@ -163,6 +163,14 @@ sudo make install</textarea><br>
   
   
   <b>Now start wpantund assuming /dev/ttyACM0  might also be /dev/ttyUSB0  or ACM1  or ACM2</b><br>
+    
+ This USB port thing is a pain. I would load usb devices on your linux computer and then turn the computer on, an label or record 
+    which USB connector becomes ACM0, ACM1 and ACM2 when all 3 are plugged in at startup. If you do this after startup, the order is 
+    determined by when you plug them in, however the border router which we install next works on startup and will expect certain nrf52840 USB 
+    dongles in certain ACM? locations.<br>
+    Does any of this make sense?
+    
+    
   
 You might have to try differenty usb ports for your nrf52840 USB Dongle
   
