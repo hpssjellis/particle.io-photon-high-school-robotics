@@ -24,7 +24,7 @@ What took a while to find out:
 
 You will also need [nrf-Connect for desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) (Look for the pull down on the right that says "platform" looks like an Ad.) for windows, Linux or Mac to transfer the openthread .hex files to your nrf52840 usb dongle
 
-You might need for more advanced programming [nrfutil]() For windows grab the top latest release from https://github.com/NordicSemiconductor/pc-nrfutil/releases 
+You might need for more advanced programming [nrfutil]() For windows grab the top latest release from https://github.com/NordicSemiconductor/pc-nrfutil/releases for linux of mac check the github https://github.com/NordicSemiconductor/pc-nrfutil
 
 
 **Tutorials about openthread**
