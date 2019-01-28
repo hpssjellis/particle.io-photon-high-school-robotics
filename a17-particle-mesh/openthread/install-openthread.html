@@ -172,11 +172,13 @@ sudo make install</textarea><br>
     
     
   
-You might have to try differenty usb ports for your nrf52840 USB Dongle
+You might have to try different usb ports for your nrf52840 USB Dongles
   
   
      
- Start the background daemon<br>          
+ Start the background daemon<br> 
+    If /dev/ttyACM0 doesn't work try /dev/ttyACM1 or 2<br>
+    Note: Remember we are looking for the board with the NCP firmware on it. Not the CLI firmware<br>
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0</textarea><br>
    
