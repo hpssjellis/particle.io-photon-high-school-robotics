@@ -10,6 +10,10 @@ git clone https://github.com/openthread/openthread.git
 git clone https://github.com/openthread/pyspinel.git
 
 
+
+
+
+
 cd ~/openthread-all/wpantund
 git checkout full/latest-release
 sudo apt-get update
@@ -21,6 +25,12 @@ sudo apt-get install libtool autoconf autoconf-archive
 ./configure --sysconfdir=/etc
 make
 sudo make install
+
+# install some extra tools
+sudo apt-get install screen
+
+
+
 
 
 cd ~/openthread-all/openthread
