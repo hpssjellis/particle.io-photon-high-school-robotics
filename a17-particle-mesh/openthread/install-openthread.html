@@ -296,7 +296,39 @@ eui64 </textarea><br>
 
   
 Confusing code <a href="https://codelabs.developers.google.com/codelabs/openthread-hardware/#8">here</a>  I think this can
-  be done easier using wpanctl. Will get back to here.
+  be done easier using wpanctl. Will get back to here.<br>
+  I can't get my commission dongle to work with Screen, so here are a few commands to try.<br>
+ <ol> On the NCP commissioner dongle
+
+ <li>router table
+ <li>child table
+ <li>networkname codelab
+ <li>extpanid C0DE7AB5C0DE7AB5
+ <li>panid 0xC0DE
+ <li>masterkey 1234C0DE7AB51234C0DE7AB51234C0DE
+ <li>ifconfig up
+ <li>thread start
+ <li>state
+ <li>rloc16
+ <li>ipaddr
+ <li>ping fdc0:de7a:b5c0:0:66bf:99b9:24c0:d55f
+ <li>commissioner start
+ <li>commissioner joiner add 2f57d222545271f1 J01NME
+ <li>
+ <li>
+ <li>
+ </ol>
+  
+ <ol> on the cli Dognle
+ <li>scan
+ <li>ifconfig up
+ <li>joiner start J01NME
+ <li>thread start
+ <li>state
+ <li>rloc16
+ <li>state child
+ <li>
+ </ol>  
   
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
