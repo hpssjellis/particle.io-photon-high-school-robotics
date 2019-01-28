@@ -45,6 +45,9 @@ sudo chmod a+x  openthread-install-all.sh</textarea><br>
   
   
 <table border=1>
+  
+<tr><td></td></tr>  
+  
 <tr><td style="background-color:green; ">  
   
   
@@ -79,7 +82,9 @@ git clone https://github.com/openthread/openthread.git</textarea><br>
 git clone https://github.com/openthread/pyspinel.git</textarea><br>
      
   
-  </td></tr> 
+</td></tr>   
+<tr><td><h1>These steps assume you have a pre-programmed nrf52840dongle. If you don't you must do the Openthread step first.</h1></td></tr>  
+<tr><td><h1>Install Wpantund</h1></td></tr>  
 <tr><td style="background-color:green; ">    
   
   
@@ -134,7 +139,7 @@ sudo make install</textarea><br>
  
   
   </td></tr>
-  
+  <tr><td></td></tr>  
   <tr><td style="background-color:blue; ">  
   
   
@@ -210,7 +215,7 @@ getprop -a</textarea><br>
    
    
    
-    </td></tr>
+</td></tr>
 
   
   
@@ -223,9 +228,9 @@ getprop -a</textarea><br>
   
   
   
+  <tr><td><h1>Install the Border Router to auto-load</h1></td></tr>   
   
-  
-  <tr><td style="background-color:green; ">   
+<tr><td style="background-color:green; ">   
 
   <h2>// Lets install the Border Router. It controls the Thread connection with the internet.
     Note: This program automatically starts after being rebooted.</h2>   
@@ -308,7 +313,7 @@ sudo systemctl status ????? I think therre is a nat64  status as well</textarea>
         <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 </textarea><br>
    
-      </td></tr> 
+</td></tr> 
 
   
   
@@ -328,8 +333,8 @@ sudo systemctl status ????? I think therre is a nat64  status as well</textarea>
   
   
   
-  
-            <tr><td style="background-color:green; ">  
+  <tr><td><h1>Intall Openthread to program your nrf52840 device</h1></td></tr>    
+<tr><td style="background-color:green; ">  
           
           
           
@@ -386,18 +391,18 @@ sudo apt-get update</textarea><br>
 </textarea><br>
              
   
-      </td></tr>
+</td></tr>
   
   
   
-                      
-       <tr><td style="background-color:Green; ">       
+  <tr><td><h1>Install pySpinel?</h1></td></tr>                        
+<tr><td style="background-color:Green; ">       
           
-          <h2>// Let's never install pyspinel: Just kidding I just havn't done it yet. I think it does what wpantund does just using Python.</h2>
+<h2>// Let's never install pyspinel: Just kidding I just havn't done it yet. I think it does what wpantund does just using Python.</h2>
 
          
-         </td></tr>
-  </table>
+</td></tr>
+</table>
          
 
           
