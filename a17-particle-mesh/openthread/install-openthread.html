@@ -51,7 +51,8 @@ sudo chmod a+x  openthread-install-all.sh</textarea><br>
   THE STEPS IN <font style="background-color:blue; color:yellow"> BLUE </font> YOU MUST DO YOURSELF IF YOU USE THE ABOVE INSTALLATION BASH COMMAND. <br>
   
 <hr><br>
-<tr><td><h1>These steps assume you have a pre-programmed nrf52840dongle. If you don't you must do the Openthread step first.</h1></td></tr>  
+<tr><td><h1>These steps assume you have 3 pre-programmed nrf52840dongle. If you don't you must do the Openthread step first and program
+  your USB Dongles. I would make 1 NCP and 2 CLI Dongles, but in the future I would like to be able to do this with only Particle Argons.</h1></td></tr>  
   
 Note: When reading this on a mobile device sometimes the text in the black boxes does not fully show up. Best to read on a Linux machine.  
 <table border=1>
@@ -225,7 +226,7 @@ form "MyCoolNetwork" -c 11</textarea><br>
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 permit-join 3600 11</textarea><br>
    
-      
+ 
            
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 status</textarea><br>
@@ -237,20 +238,97 @@ status</textarea><br>
 Have a look at all the properties           
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 getprop -a</textarea><br>
-   
+  
+Jut close the window or exit gets out of here:  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+exit</textarea><br>
+  
+  
+This Dongle firmware remembers your data fairly well so if you want to start from scracth you can type on the command line  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo wpanctl reset </textarea><br>   
 
-     
+  
+ <br><br> 
+  
+
+Now find out the /dev/ttyACM? of your other CLI Dongles. Then use the screen program to activate the clients with Join ability    <br>     
            
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
-</textarea><br>
+screen /dev/ttyACM1 115200</textarea><br>
    
+            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+ipaddr</textarea><br>
+ 
+  You can learn all kinds of helpful things about how to use the screen program <a href="https://codelabs.developers.google.com/codelabs/openthread-hardware/#5">here</a> 
+        but I just used lots of screens.<br>
+  For the following command note the number of anything you want to join with.
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+scan</textarea><br>
    
+ Here is the tricky part. If you used the web GUI you know the masterkey. If you have an Argon then you need to find out the master key.
+  After the workd --data enter your masterkey<br>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+setprop NetworkKey --data </textarea><br>
    
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+join 1</textarea><br>
+   
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+status</textarea><br>
+
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+getprop Thread:RLOC16</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+router table</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+child table</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+eui64 </textarea><br>   
+
+  
+Confusing code <a href="https://codelabs.developers.google.com/codelabs/openthread-hardware/#8">here</a>  I think this can
+  be done easier using wpanctl. Will get back to here.
+  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+     
+ 
 </td></tr>
 
   
   
-  
+
   
   
   
