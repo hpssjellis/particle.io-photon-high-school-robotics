@@ -247,7 +247,7 @@ exit</textarea><br>
 This Dongle firmware remembers your data fairly well so if you want to start from scracth you can type on the command line  
   
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
-sudo wpanctl reset </textarea><br>   
+sudo wpanctl -I wpan0 reset </textarea><br>   
 
   
  <br><br> 
@@ -442,7 +442,29 @@ sudo systemctl status wpantund.service</textarea><br>
               
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 sudo systemctl status ????? I think there is a nat64  status as well</textarea><br>
-   
+ 
+  
+The border Router is started at boot, which I find a bit irritating for dev. so if you want to stop and then start a service try  
+               
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl stop otbr-web.service </textarea><br> 
+  
+               
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl start otbr-web.service </textarea><br>   
+  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl restart otbr-web.service </textarea><br> 
+  
+  You can also disable and enable the above services but you can look that up<br><br><br>
+  
+  
+  
+  
+  
+  
+  
 Now is probably a good time to test both the <a href="https://play.google.com/store/apps/details?id=org.threadgroup.commissioner&hl=en">Thread Commissionning App</a>
   and the Web Gui. On the Docker you can set the Web GUI IP, but I don't know how to do that with the installed one so I just use "localhost" 
   and randomly it works.<br>
