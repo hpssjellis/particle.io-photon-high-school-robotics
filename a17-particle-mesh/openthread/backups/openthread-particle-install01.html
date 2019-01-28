@@ -1,0 +1,598 @@
+<body bgcolor="">
+  
+ <script>
+function mySelectAll(myThis){
+   myThis.select();
+   document.execCommand('Copy');
+}
+</script> 
+  
+  
+  
+  
+
+<h1 align=center>Installing OpenThread on a Linux Computer (I used both Ubuntu versions 16.04 and 18.04)....</h1>
+  <h1>Draft, Draft, Draft, Draft, Draft, Draft, Draft, Draft,  Did I mention this is only a draft :)</h1>  
+  
+  <font color=red><b> On this site, single click black boxes to copy. Then on the Linux command line, 
+    right-click-paste (the Linux command line does not use  ctrl-v to paste) </b></font><br><br>
+  
+  
+  Checkout the github  at <a href="https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/">https://github.com/hpssjellis/particle.io-photon-high-school-robotics/edit/master/a17-particle-mesh/openthread/</a>  
+<br><br>
+
+  
+  You can do most of the steps below automatically by copying 
+  <a href="https://raw.githubusercontent.com/hpssjellis/particle.io-photon-high-school-robotics/master/a17-particle-mesh/openthread/openthread-install-all.sh">
+    openthread-install-all.sh</a> to a fresh file on your linux machine. Several ways to do that, here is one:<br><br>  
+  
+
+     
+<li><textarea  style="background-color:black; color:yellow;  width:90%;  " rows=1 readonly onfocus="{mySelectAll(this)}">
+nano openthread-install-all.sh</textarea><br>
+  
+Then paste the above file into it and ctle-x to save<br>
+  Then to make it runnable:<br>
+  
+  
+<li><textarea  style="background-color:black; color:yellow;  width:90%;  " rows=1 readonly onfocus="{mySelectAll(this)}">
+sudo chmod a+x  openthread-install-all.sh</textarea><br>
+  
+  
+ Then run it with this 
+    
+<li><textarea  style="background-color:black; color:yellow;  width:90%;  " rows=1 readonly onfocus="{mySelectAll(this)}">
+./openthread-install-all.sh</textarea><br><br><br>
+  
+
+  
+  
+  THE MANUAL STEPS BELOW IN <font style="background-color:green; color:yellow"> GREEN</font> ARE DONE AUTOMATICALLY BY THE ABOVE INSTALLATION BASH COMMAND. <br>
+  THE STEPS IN <font style="background-color:blue; color:yellow"> BLUE </font> YOU MUST DO YOURSELF IF YOU USE THE ABOVE INSTALLATION BASH COMMAND. <br>
+  
+<hr><br>
+<tr><td><h1>These steps assume you have 3 pre-programmed nrf52840dongle. If you don't you must do the Openthread step first and program
+  your USB Dongles. I would make 1 NCP and 2 CLI Dongles, but in the future I would like to be able to do this with only Particle Argons.</h1></td></tr>  
+  
+Note: When reading this on a mobile device sometimes the text in the black boxes does not fully show up. Best to read on a Linux machine.  
+<table border=1>
+  
+  <tr><td><h1>Step 1. Might as well install all 4 github repositories</h1></td></tr>  
+  
+<tr><td style="background-color:green; ">  
+  
+  
+
+(If you know how to do things in other ways, such as making new directories then do what you know)<br>
+<ol>
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; " rows=1 readonly onfocus="{mySelectAll(this)}">
+cd ~</textarea><br>
+  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%;  "  rows=1  readonly onfocus="{mySelectAll(this)}">
+mkdir openthread-all</textarea><br>
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%;"  rows=1  readonly onfocus="{mySelectAll(this)}">
+cd ~/openthread-all</textarea><br>  
+     
+<h2>// Download the 4 openthread repositories</h2>  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git clone https://github.com/openthread/wpantund.git</textarea><br>
+    
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git clone https://github.com/openthread/borderrouter.git</textarea><br>
+  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git clone https://github.com/openthread/openthread.git</textarea><br>
+
+ 
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git clone https://github.com/openthread/pyspinel.git</textarea><br>
+     
+  
+</td></tr>   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<tr><td><h1>Step 2. Install Wpantund</h1></td></tr>  
+<tr><td style="background-color:green; ">    
+  
+  
+<h2>// Let's install wpantund first. It controls what items can join the thread network</h2>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+cd ~/openthread-all/wpantund</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git checkout full/latest-release</textarea><br>
+     
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get update</textarea><br>
+   
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get install dbus libreadline</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git checkout full/latest-release</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get install libtool autoconf autoconf-archive</textarea><br>
+     
+
+ 
+  
+  
+  
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./bootstrap.sh </textarea><br>
+   
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./configure --sysconfdir=/etc</textarea><br>
+   
+     
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+make</textarea><br>
+   
+     
+This install it on your computer           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo make install</textarea><br>
+ 
+  
+  </td></tr>
+  <tr><td></td></tr>  
+  <tr><td style="background-color:blue; ">  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <b>Now start wpantund assuming /dev/ttyACM0  might also be /dev/ttyUSB0  or ACM1  or ACM2</b><br>
+    
+ This USB port thing is a pain. I would load usb devices on your linux computer and then turn the computer on, an label or record 
+    which USB connector becomes ACM0, ACM1 and ACM2 when all 3 are plugged in at startup. If you do this after startup, the order is 
+    determined by when you plug them in, however the border router which we install next works on startup and will expect certain nrf52840 USB 
+    dongles in certain ACM? locations.<br>
+    Does any of this make sense?
+    
+    
+  
+You might have to try different usb ports for your nrf52840 USB Dongles
+  
+  
+     
+ Start the background daemon<br> 
+    If /dev/ttyACM0 doesn't work try /dev/ttyACM1 or 2<br>
+    Note: Remember we are looking for the board with the NCP firmware on it. Not the CLI firmware<br>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0</textarea><br>
+   
+   
+Now start wpanctl to control wpantund using the wpan0 name above if you have a different nrf52840 
+  you can setup another wpantund and ctl using ttyACM1 and wpan1 
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo /usr/local/bin/wpanctl -I wpan0</textarea><br>
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+help</textarea><br>
+  
+    
+ // plug in other nrf52840's if you have them<br>          
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+scan</textarea><br>
+    
+  
+   use your networkmaster key instead of:  000102030405060708090a0b0c0d0e0f<br>
+  The command is <br>
+   setprop NetworkKey --data 000102030405060708090a0b0c0d0e0f        
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+setprop NetworkKey --data </textarea><br>
+   
+
+   
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+form "MyCoolNetwork" -c 11</textarea><br>
+   
+   
+// allow joining this network for 1 hour = 3600 seconds<br>           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+permit-join 3600 11</textarea><br>
+   
+ 
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+status</textarea><br>
+   
+   
+ 
+   
+     
+Have a look at all the properties           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+getprop -a</textarea><br>
+  
+Jut close the window or exit gets out of here:  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+exit</textarea><br>
+  
+  
+This Dongle firmware remembers your data fairly well so if you want to start from scracth you can type on the command line  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo wpanctl reset </textarea><br>   
+
+  
+ <br><br> 
+  
+
+Now find out the /dev/ttyACM? of your other CLI Dongles. Then use the screen program to activate the clients with Join ability    <br>     
+             
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get install screen</textarea><br>
+            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+screen /dev/ttyACM1 115200</textarea><br>
+   
+            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+ipaddr</textarea><br>
+ 
+  You can learn all kinds of helpful things about how to use the screen program <a href="https://codelabs.developers.google.com/codelabs/openthread-hardware/#5">here</a> 
+        but I just used lots of screens.<br>
+  For the following command note the number of anything you want to join with.
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+scan</textarea><br>
+   
+ Here is the tricky part. If you used the web GUI you know the masterkey. If you have an Argon then you need to find out the master key.
+  After the workd --data enter your masterkey<br>
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+setprop NetworkKey --data </textarea><br>
+   
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+join 1</textarea><br>
+   
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+status</textarea><br>
+
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+getprop Thread:RLOC16</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+router table</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+child table</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+eui64 </textarea><br>   
+
+  
+Confusing code <a href="https://codelabs.developers.google.com/codelabs/openthread-hardware/#8">here</a>  I think this can
+  be done easier using wpanctl. Will get back to here.<br>
+  I can't get my commission dongle to work with Screen, so here are a few commands to try.<br>
+ <ol> On the NCP commissioner dongle
+
+ <li>router table
+ <li>child table
+ <li>networkname codelab
+ <li>extpanid C0DE7AB5C0DE7AB5
+ <li>panid 0xC0DE
+ <li>masterkey 1234C0DE7AB51234C0DE7AB51234C0DE
+ <li>ifconfig up
+ <li>thread start
+ <li>state
+ <li>rloc16
+ <li>ipaddr
+ <li>ping fdc0:de7a:b5c0:0:66bf:99b9:24c0:d55f
+ <li>commissioner start
+ <li>commissioner joiner add 2f57d222545271f1 J01NME
+ <li>
+ <li>
+ <li>
+ </ol>
+  
+ <ol> on the cli Dognle
+ <li>scan
+ <li>ifconfig up
+ <li>joiner start J01NME
+ <li>thread start
+ <li>state
+ <li>rloc16
+ <li>state child
+ <li>
+ </ol>  
+  
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>   
+     
+     
+ 
+</td></tr>
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr><td><h1>Step 3. Install the Border Router to auto-load</h1></td></tr>   
+  
+<tr><td style="background-color:green; ">   
+
+  <h2>// Lets install the Border Router. It controls the Thread connection with the internet.
+    Note: This program automatically starts after being rebooted.</h2>   
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+cd ~/openthread-all/borderrouter</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git checkout full/latest-release</textarea><br>
+        
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./script/bootstrap</textarea><br>
+   
+      
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./script/setup</textarea><br>
+  
+    </td></tr>
+    <tr><td style="background-color:blue; ">  
+  
+  
+ // plug in your nrf52840 usb dongle<br>            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+ls /dev/tty*</textarea><br>
+           
+ 
+  --or--
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+ls /dev/ttyA*</textarea><br>
+   
+
+//Edit wpantund.conf  ......    should be in /etc/wpantund.conf     <br>      
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+find -iname wpantund.conf   </textarea><br>
+   
+
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo nano /etc/wpantund.conf</textarea><br>
+   
+<br> Edit<br>
+
+  
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+Config:NCP:SocketPath "/dev/ttyACM0"</textarea><br>
+  
+  ^x to exit nano
+   
+Reboot the computer!
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl status avahi-daemon.service</textarea><br>
+   
+           
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl status otbr-agent.service</textarea><br>
+   
+            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl status otbr-web.service</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl status wpantund.service</textarea><br>
+              
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo systemctl status ????? I think there is a nat64  status as well</textarea><br>
+   
+Now is probably a good time to test both the <a href="https://play.google.com/store/apps/details?id=org.threadgroup.commissioner&hl=en">Thread Commissionning App</a>
+  and the Web Gui. On the Docker you can set the Web GUI IP, but I don't know how to do that with the installed one so I just use "localhost" 
+  and randomly it works.<br>
+  On the web Gui always check the status, when things are not working it is very bleak, 3 entries that kind of say it isn't working, 
+  When it is working there are several entries and important information here. Also check the Join button, if you have any particle Argons
+  up and running they may show up there. Try the form button. I have been told to change all the entries except that last one
+  not sure if that is relevant information but do record the password as that is needed for the Thread App.<br><br>
+  
+  Note: The Thread Commissioning app retains information that messes up other setups so go into Apps, Settings, stoarge and clear things, 
+  then close the App or force stop before trying with a new thread network.<br>
+  
+  I have huge problems getting past the Thread App admin password, have done it a few times. Not sure what I am doing wrong.<br>
+  
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+   
+    <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+   
+      <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+   
+        <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+   
+</td></tr> 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr><td><h1>Step 4. Install Openthread to program your nrf52840 device</h1></td></tr>    
+<tr><td style="background-color:green; ">  
+          
+          
+          
+          <h2>// Let's install openthread for programming the nrf52840 USB Dongles</h2>
+  This did not install well on my Ubuntu 16.04 Machine, but was find on my 18.04 Ubuntu Linux. A trick that might help is to 
+  install po-util.com first as it helps with some of the needed abilities.<br>
+
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+cd ~/openthread-all/openthread</textarea><br>
+            
+  
+   <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+git checkout full/latest-release</textarea><br>
+     
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+sudo apt-get update</textarea><br>
+            
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./script/bootstrap</textarea><br>
+            
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+./bootstrap</textarea><br>
+            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+make -f examples/Makefile-nrf52840 clean</textarea><br>
+             
+ As afr as I can tell this is every command option possible. You might want to ony try a few of them            
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+make -f examples/Makefile-nrf52840 USB=1 BOOTLOADER=1 BORDER_AGENT=1 BORDER_ROUTER=1 COMMISSIONER=1 JOINER=1 UDP_PROXY=1 CFLAGS+=-UCONFIG_GPIO_AS_PINRESET</textarea><br>
+  
+This converts the ncp to a hex file             
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+arm-none-eabi-objcopy output/nrf52840/bin/ot-ncp-ftd -O ihex output/nrf52840/bin/ncp_app.hex</textarea><br>
+  
+  
+This converts the cli to a hex file.               
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O ihex output/nrf52840/bin/ot-cli-ftd.hex</textarea><br>
+ 
+ Now look in the output/nrf52840/bin folder an you should see several files but you are interested in the 2 .hex files.<br> 
+  
+  
+  
+If you have the nrfutil you can run this command. Note your nrf52840 device must be in DFU mode.<br><br> I take the 
+  easy way and use nrt-Connect for Desktop. Put the device in DFU mode ny pushing the 2nd button and visually load the device, load the .hex file and
+  write the file to the device. Note You first need a bootloader. I download the bootloarder from makerdiary in compressed format and then ubncompress it 
+  and load it first into nrf-connect-for desktop.
+  
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+nrfutil dfu thread --help</textarea><br>
+  
+  
+               
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+  
+  
+</td></tr> 
+<tr><td style="background-color:blue; ">  
+  
+  
+             
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+  
+  
+             
+<li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+  
+   <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+            
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+            
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+            
+  <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
+</textarea><br>
+             
+  
+</td></tr>
+  
+  
+  
+  
+  
+  
+  <tr><td><h1>Step 5. Install pySpinel?</h1></td></tr>                        
+<tr><td style="background-color:Green; ">       
+          
+<h2>// Let's never install pyspinel: Just kidding I just havn't done it yet. I think it does what wpantund does just using Python.</h2>
+
+         
+</td></tr>
+</table>
+         
+
+          
+  
+  </body>
+
+
+
