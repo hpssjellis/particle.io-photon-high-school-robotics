@@ -22,7 +22,7 @@ What took a while to find out:
 
 [PySpinel](https://github.com/openthread/pyspinel) seems to be a python program that either makes Drivers or does kind of what wpantund does but in python.
 
-You will also need [nrf-Conect for desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) (Look for the pull down on the right that says "platform" looks like an Ad.) for windows, Linux or Mac to transfer the openthread .hex files to your nrf52840 usb dongle
+You will also need [nrf-Connect for desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) (Look for the pull down on the right that says "platform" looks like an Ad.) for windows, Linux or Mac to transfer the openthread .hex files to your nrf52840 usb dongle
 
 You might need for more advanced programming [nrfutil]() For windows grab the top laatest release from https://github.com/NordicSemiconductor/pc-nrfutil/releases 
 
