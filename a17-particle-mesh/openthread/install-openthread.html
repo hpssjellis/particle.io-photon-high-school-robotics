@@ -42,11 +42,12 @@ sudo chmod a+x  openthread-install-all.sh</textarea><br>
   THE STEPS IN <font style="background-color:blue; color:yellow"> BLUE </font> YOU MUST DO YOURSELF IF YOU USE THE ABOVE INSTALLATION BASH COMMAND. <br>
   
 <hr><br>
+<tr><td><h1>These steps assume you have a pre-programmed nrf52840dongle. If you don't you must do the Openthread step first.</h1></td></tr>  
   
   
 <table border=1>
   
-<tr><td></td></tr>  
+  <tr><td><h1>Step 1. Might as well install all 4 github repositories</h1></td></tr>  
   
 <tr><td style="background-color:green; ">  
   
@@ -83,8 +84,19 @@ git clone https://github.com/openthread/pyspinel.git</textarea><br>
      
   
 </td></tr>   
-<tr><td><h1>These steps assume you have a pre-programmed nrf52840dongle. If you don't you must do the Openthread step first.</h1></td></tr>  
-<tr><td><h1>Install Wpantund</h1></td></tr>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<tr><td><h1>Step 2. Install Wpantund</h1></td></tr>  
 <tr><td style="background-color:green; ">    
   
   
@@ -228,7 +240,7 @@ getprop -a</textarea><br>
   
   
   
-  <tr><td><h1>Install the Border Router to auto-load</h1></td></tr>   
+  <tr><td><h1>Step 3. Install the Border Router to auto-load</h1></td></tr>   
   
 <tr><td style="background-color:green; ">   
 
@@ -333,7 +345,7 @@ sudo systemctl status ????? I think therre is a nat64  status as well</textarea>
   
   
   
-  <tr><td><h1>Intall Openthread to program your nrf52840 device</h1></td></tr>    
+  <tr><td><h1>Step 4. Install Openthread to program your nrf52840 device</h1></td></tr>    
 <tr><td style="background-color:green; ">  
           
           
@@ -412,7 +424,10 @@ arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O ihex output/nrf52840/bin
   
   
   
-  <tr><td><h1>Install pySpinel?</h1></td></tr>                        
+  
+  
+  
+  <tr><td><h1>Step 5. Install pySpinel?</h1></td></tr>                        
 <tr><td style="background-color:Green; ">       
           
 <h2>// Let's never install pyspinel: Just kidding I just havn't done it yet. I think it does what wpantund does just using Python.</h2>
