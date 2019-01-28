@@ -383,8 +383,12 @@ arm-none-eabi-objcopy output/nrf52840/bin/ot-ncp-ftd -O ihex output/nrf52840/bin
 This converts the cli to a hex file.               
 <li><textarea  style="background-color:black; color:yellow; width:90%; "  rows=1  readonly onfocus="{mySelectAll(this)}">
 arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O ihex output/nrf52840/bin/ot-cli-ftd.hex</textarea><br>
+ 
+ Now look in the output/nrf52840/bin folder an you should see several files but you are interested in the 2 .hex files.<br> 
   
-If you have the nrfutil you can run this command. Note your nrf52840 device must be in DFU mode. I take the 
+  
+  
+If you have the nrfutil you can run this command. Note your nrf52840 device must be in DFU mode.<br><br> I take the 
   easy way and use nrt-Connect for Desktop. Put the device in DFU mode ny pushing the 2nd button and visually load the device, load the .hex file and
   write the file to the device. Note You first need a bootloader. I download the bootloarder from makerdiary in compressed format and then ubncompress it 
   and load it first into nrf-connect-for desktop.
