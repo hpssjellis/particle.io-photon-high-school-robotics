@@ -17,10 +17,11 @@ git clone https://github.com/openthread/pyspinel.git
 cd ~/openthread-all/wpantund
 git checkout full/latest-release
 sudo apt-get update
+
 sudo apt-get install dbus libreadline
 sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev
-git checkout full/latest-release
 sudo apt-get install libtool autoconf autoconf-archive
+
 ./bootstrap.sh 
 ./configure --sysconfdir=/etc
 make
@@ -36,6 +37,7 @@ sudo apt-get install screen
 cd ~/openthread-all/openthread
 git checkout full/latest-release
 sudo apt-get update
+
 ./script/bootstrap
 ./script/setup
 
