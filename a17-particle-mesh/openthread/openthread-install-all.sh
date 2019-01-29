@@ -39,7 +39,7 @@ git checkout full/latest-release
 sudo apt-get update
 
 ./script/bootstrap
-./script/setup
+./bootstrap
 
 make -f examples/Makefile-nrf52840 clean
 
