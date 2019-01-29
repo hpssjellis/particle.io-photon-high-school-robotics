@@ -19,10 +19,10 @@ MODULAR=n po argon build
 ## po argon build
 
 
-## you do the nest 3 lines without the hashtag
 
-#particle cloud login
-#particle list
-#particle flash --usb  myArgonName.firmware.bin
 
-## dfu mode flashing yellow hold mode button tap reset about 5 seconds past flashing purple safe mode.
+particle cloud login
+particle list
+particle flash --usb  myArgonName.firmware.bin
+
+## dfu mode flashing yellow hold mode button tap reset, about 5 seconds past flashing purple safe mode.
