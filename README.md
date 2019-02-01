@@ -74,7 +74,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 1. [a16-serial-uART using a finger print scanner](https://youtu.be/GDRUk4ICt48?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) purchased from [sparkfun.com](https://www.sparkfun.com/products/13007)
 
 1. a17-particle-mesh working on it Jan 2019. Check it out as interesting things are added as they are understood.<br>
-   Mesh networking is in the early stages of connecting with Google Nests, OpenThread. Tutroials at [openthread.io](https://openthread.io/) and [github](https://github.com/openthread). My draft Openthread installation page is [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html).
+   Mesh networking is in the early stages of connecting with Google Nests, OpenThread. Tutroials at [openthread.io](https://openthread.io/) and [the openthread github](https://github.com/openthread). 
+   
+   My draft Openthread installation page is [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html). Note: Openthread makes the firmware for devices, the Border Router connects the device to the internet and wpantund controls everything.
 
 
 
