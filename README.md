@@ -35,7 +35,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 
-## List of Videos
+## List of Videos that match the repository folders above.
 
 
 .1 [a00-intro](https://youtu.be/bOPonnhGOUg?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) An introduction to teaching robotics using the Particle.io Photon
