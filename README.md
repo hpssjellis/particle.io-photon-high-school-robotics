@@ -101,7 +101,10 @@ These are really good everyone should have a look at all 3 of them.
 
 
 
-1. [The IoT rant](https://youtu.be/1ZYcCXPAMPo?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) When I first started researching Roboitcs for the classroom I looked into what other teachers were doing with Lego Mindstorms, VEX robotics, I had messed around with Stamp micro-controllers and new about Arduino's and the Raspberry Pi's. I found out about the Particle.io Photon predecessor the Spark Core and purchased it and started working with it but was really frustrated by all the weird issues surrounding learning robotics. However, as a multi-year computer programming teacher I was really impressed with the online IDE https://build.particle.io/ and the ability to flash code wirelessly since installing software into school computers has always been a frustrating route.
+1. [The IoT rant](https://youtu.be/1ZYcCXPAMPo?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) When I first started researching Robotics for the classroom I looked into what other teachers were doing with Lego Mindstorms, VEX robotics, First programs. I had already messed around with Stamp micro-controllers and new about Arduino's and the Raspberry Pi's. All of these were great but either more like competitions or just really confusing. Arduinos have several versions which causes come issues.
+
+
+I found out about the Particle.io Photon predecessor the Spark Core and purchased it and started working with it but was really frustrated by all the weird issues surrounding learning robotics. However, as a multi-year computer programming teacher I was really impressed with the online IDE https://build.particle.io/ and the ability to flash code wirelessly, since installing software into school computers has always been a frustrating route.
 Website for the video [here](https://www.rocksetta.com/spark-core-photon/iot-rant/)
 
 Enjoy the rant.
