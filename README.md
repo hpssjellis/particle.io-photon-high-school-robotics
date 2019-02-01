@@ -82,7 +82,9 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. a19 Accelerometer. I havn't made a video yet
 
-1. a20.   5 Inch  Touch Strip. I havn't made a video yet.
+1. a20. FSLP  5 Inch  Touch Strip. I havn't made a video yet.
+
+1. a21 RangeFinder.   I havn't made a video yet.
 ----------------------------------------------------------------------------------------------------------------------------
 
 
