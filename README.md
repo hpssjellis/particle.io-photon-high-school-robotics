@@ -89,6 +89,8 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 
 **Extra**
+These are really good everyone should have a look at all 3 of them.
+
 1. Advanced Rasperry PI [video at](https://www.youtube.com/watch?v=h5NnSbo351I&index=1&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) has it's own github site at https://github.com/hpssjellis/particle-photon-raspberry-pi-iot
 
 
