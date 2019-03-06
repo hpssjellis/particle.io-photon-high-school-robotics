@@ -19,11 +19,13 @@
   
   <!-- all platforms -->
     
-  <preference name='phonegap-version' value='cli-7.0.1' />
+  <preference name='phonegap-version' value='cli-8.1.1' />
   <preference name='pgb-builder-version' value='2' />   
     
 
  <!--  older versions that worked
+
+  <preference name='phonegap-version' value='cli-7.0.1' />
   <preference name="phonegap-version" value="cli-6.5.0" />  
   <preference name="phonegap-version" value="3.7.0" />
   <preference name="phonegap-version" value="cli-6.3.0" />  
