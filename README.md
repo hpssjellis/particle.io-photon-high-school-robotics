@@ -4,6 +4,12 @@ Most of the important files from my High School Robotics course using the partic
 
 For advanced students in my High School beginner robotics class to proceed quickly through the course so they can start making prototypes or for beginner students in my advanced Robotics Construction class to go at their own pace through some of the harder assignments.
 
+For Machine Learning using Javascript and tensorflowjs try my site at:  https://github.com/hpssjellis/beginner-tensorflowjs-examples-in-javascript
+
+
+
+
+
 Hopefully this repository will stay reasonably static so that it matches the video series at
 
 https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
