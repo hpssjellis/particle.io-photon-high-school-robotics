@@ -1,7 +1,7 @@
 
 // Particle Mesh Devices Connection Information Testing
 // By Jeremy Ellis
-// and Nathan Robinson maker of po-util.com
+
 
 
 // Install po-util with the following
