@@ -1,3 +1,5 @@
+Video [a16-serial-uART using a finger print scanner](https://youtu.be/GDRUk4ICt48?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) purchased from [sparkfun.com](https://www.sparkfun.com/products/13007)
+
 
 
 Before flashing the .ino file to your photon remember to go to the FPS library and include  .cpp and .h files into your project.
