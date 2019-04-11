@@ -1,4 +1,8 @@
-** A11 DC Motor Drivers
+A11 DC Motor Drivers
+
+
+
+Video [a11-DC-motor-drivers](https://youtu.be/-LZL-XpIsHs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) For DC motors I would like you to use the web-app.ino and web-app.html to control both the [dual motor driver](https://www.pololu.com/product/713) which works for motors  up to to 13.5 V max and 1.2 Amp Max and the [big motor driver](https://www.pololu.com/product/1451) for DC motors up To 24V Max and 12 Amp Max .
 
 
 
