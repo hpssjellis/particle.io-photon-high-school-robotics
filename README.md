@@ -71,33 +71,35 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 1. Video [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) Just proving that a [Pololu stepper motor](https://www.pololu.com/product/1204) with [Pololu stepper driver](https://www.pololu.com/product/2134) works. You should try to program it to do more fancy things. Another thing my students tried is using delayMicroseconds() instead of delay() to get the stepper moving faster. As always be careful with your motor.
 
-1. Video [a13-arduino](https://youtu.be/VYskWeBI9Os?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s). When Wifi is bad make your Photon switch between Photon normal wifi behaviour and Non-Wifi Arduino type behaviour. Solid green means the photon is working without Wifi, breathing cyan means normal Wifi mode. Note: Learn how to set the photon to safe mode.
+1. Video [a13-arduino](https://youtu.be/VYskWeBI9Os?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s). When Wifi is bad make your Photon switch between Photon normal wifi behaviour and Non-Wifi Arduino type behaviour. Solid green means the photon is working without Wifi, breathing cyan means normal Wifi mode. Note: Learn how to set the photon to [safe mode](https://community.particle.io/t/safe-mode-explained/26259)  !
 
-1. Video [a14-serial-I2C](https://youtu.be/oGOPE2gaRtE?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s)  using the [Groove OLED](https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html?gclid=CjwKCAjwuITNBRBFEiwA9N9YEF94ToMEP2Km6hlBt4COL7mtPW3P8zrbwAyTHhaB_6V2FNqwhNl2GxoCxYQQAvD_BwE) Showing how to make words print out on a very small display.
+1. Video [a14-serial-I2C](https://youtu.be/oGOPE2gaRtE?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s)  using the [Groove OLED](https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html?gclid=CjwKCAjwuITNBRBFEiwA9N9YEF94ToMEP2Km6hlBt4COL7mtPW3P8zrbwAyTHhaB_6V2FNqwhNl2GxoCxYQQAvD_BwE) Showing how to make text print out on a very small display.
 
-1. Video [a15-serial-SPI using the Pixy](https://youtu.be/AngRhXIYG2Y?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) Demonstrating how to use SPI serial connections with the very cool [Pixy camera](http://charmedlabs.com/default/pixy-cmucam5/)
+1. Video [a15-serial-SPI using the Pixy](https://youtu.be/AngRhXIYG2Y?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) Demonstrating how to use SPI serial connections with the very cool [Pixy camera](http://charmedlabs.com/default/pixy-cmucam5/) that converts colored objects into high speed data.
 
 1. Video [a16-serial-uART using a finger print scanner](https://youtu.be/GDRUk4ICt48?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) purchased from [sparkfun.com](https://www.sparkfun.com/products/13007)
 
 1. a17-particle-mesh working on it Jan 2019. Check it out as interesting things are added as they are understood.<br>
-   Mesh networking is in the early stages of connecting with Google Nests, OpenThread. Tutroials at [openthread.io](https://openthread.io/) and [the openthread github](https://github.com/openthread). 
+   Mesh networking is in the early stages of working with Google Nests, OpenThread. Tutroials at [openthread.io](https://openthread.io/) and [the openthread github](https://github.com/openthread). 
+   
+   More to come late 2019
    
    My draft Openthread installation page is [here](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html). Note: Openthread makes the firmware for devices, the Border Router connects the device to the internet and wpantund controls everything.
 
 
 
-1. a18 GPS. I havn't made a video yet
+1. a18 GPS. I havn't made a video yet, but working code is here.
 
-1. a19 Accelerometer. I havn't made a video yet
+1. a19 Accelerometer. I havn't made a video yet, but working code is here.
 
-1. a20. FSLP  5 Inch  Touch Strip. I havn't made a video yet.
+1. a20. FSLP  5 Inch  Touch Strip. I havn't made a video yet, but working code is here.
 
-1. a21 RangeFinder.   I havn't made a video yet.
+1. a21 RangeFinder.   I havn't made a video yet, but working code is here.
 ----------------------------------------------------------------------------------------------------------------------------
 
 
 **Extra**
-These are really good everyone should have a look at all 3 of them.
+These are really good extras, everyone should have a look at all 3 of them.
 
 1. Advanced Rasperry PI [video at](https://www.youtube.com/watch?v=h5NnSbo351I&index=1&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr) has it's own github site at https://github.com/hpssjellis/particle-photon-raspberry-pi-iot
 
