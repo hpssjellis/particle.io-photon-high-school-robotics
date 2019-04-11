@@ -1,0 +1,1 @@
+Video [a14-serial-I2C](https://youtu.be/oGOPE2gaRtE?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s)  using the [Groove OLED](https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html?gclid=CjwKCAjwuITNBRBFEiwA9N9YEF94ToMEP2Km6hlBt4COL7mtPW3P8zrbwAyTHhaB_6V2FNqwhNl2GxoCxYQQAvD_BwE) Showing how to make text print out on a very small display.
