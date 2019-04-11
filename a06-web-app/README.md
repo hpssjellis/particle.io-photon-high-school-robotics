@@ -4,6 +4,9 @@
 
 ## Web page control of the Photon (or Raspberry Pi)
 
+Video [a06-web-app](https://youtu.be/NocvWycfz2o?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) A web page replacement for the Tinker App. You can edit the web page to control any pins on the Photon. View the generic working web app at [https://hpssjellis.github.io/particle.io-photon-high-school-robotics/](https://hpssjellis.github.io/particle.io-photon-high-school-robotics/) Needs your device ID and access token, which is stored locally on the webpage and watch how it can activate D7 to prove web page connectivity.
+
+
 
 1. Load web-app.ino on the particle IDE and flash it to your Photon
 
