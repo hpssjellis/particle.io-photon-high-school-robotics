@@ -1,4 +1,4 @@
-**Using IFTTT with the particle.io Photon
+Using IFTTT with the particle.io Photon
 
 Video [video A08-IFTTT](https://youtu.be/DOlYkTn84Bs?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&t=5s) Have your Photon control other devices on the web using https://ifttt.com. Today we just use a button to turn on D7 but using IFTTT we can try to control other students D7 buttons. Note: use a slider to reset your photon's ability to send to IFTTT and a button to actually send the message.
 
