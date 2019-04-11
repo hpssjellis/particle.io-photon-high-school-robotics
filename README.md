@@ -1,10 +1,10 @@
 # particle.io-photon-high-school-robotics
-Most of the important files from my High School Robotics course using the particle.io photon a wifi out of the box arduino.
+Most of the important files from my High School Robotics course using the particle.io photon, a wifi out of the box arduino.
 
 
-For advanced students in my High School beginner robotics class to proceed quickly through the course so they can start making prototypes or for beginner students in my advanced Robotics Construction class to go at their own pace through some of the harder assignments.
+For advanced students in my High School beginner robotics class to proceed quickly through the course so they can start making prototypes or for beginner students in my advanced Robotics Construction class to work at their own pace through some of the harder assignments.
 
-For Machine Learning using Javascript and tensorflowjs try my site at:  https://www.rocksetta.com/tensorflowjs/ 
+For Machine Learning using Javascript and tensorflowjs in the web browser try my site at:  https://www.rocksetta.com/tensorflowjs/ 
 
 
 
