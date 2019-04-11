@@ -38,7 +38,7 @@ https://www.youtube.com/playlist?list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr
 
 [Photon Firmware Documentation](https://docs.particle.io/reference/firmware/photon/) Learn about the firmware (The software that runs the Photon).
 
-
+[Price List](https://github.com/hpssjellis/particle.io-photon-high-school-robotics/blob/master/priceList.md) Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
 
 
 ## List of Videos that match the repository folders above.
