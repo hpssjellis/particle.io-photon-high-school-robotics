@@ -33,7 +33,7 @@ x 15 for a class of 30 student Total =
 
 ## Class needs at least one of each of the following:
 
-1. Pixy camera
+1. [Pixy camera](https://pixycam.com/) purchase [Charmed Labs Pixy 2 CMUcam5 Image Sensor](https://www.robotshop.com/ca/en/charmed-labs-pixy-2-cmucam5-image-sensor.html) $80.00
 
 1. Fingerprint scanner FPS	2	[RB-Spa-803](http://www.robotshop.com/ca/en/fingerprint-scanner-5v-ttl.html)	$64.04
 
