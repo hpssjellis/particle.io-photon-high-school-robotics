@@ -11,6 +11,12 @@
 	This sketch will attempt to identify a previously enrolled fingerprint.
 	
 	Adapted for Particle Libraries by Michael Frontz, April 2017
+	
+	Best to use this github to find the header and cpp files
+	
+	https://github.com/pkourany/FPS_GT511C3_Library
+	
+	
 */
 
 //#include "FPS_GT511C3.h"
