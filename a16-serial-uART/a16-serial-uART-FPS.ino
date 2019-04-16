@@ -18,7 +18,7 @@
 
 	
 /* Hardware setup - FPS connected to Photon using JST SH Jumper 4 Wire Assembly (https://www.sparkfun.com/products/10359)
-	If the JST SH jumper wires were numbered left to right as 1-4 (with black wire being Wire 4), the connections would be:	
+	If the JST SH jumper wires were numbered left to right as 1-4 (with black wire being Wire 2), the connections would be:	
 	FPS Wire 1 (Red) = VCC --> Photon 3.3V
 	FPS Wire 2 (Black) = GND --> Photon GND
 	FPS Wire 3 (Yellow) = RX --> Photon TX
