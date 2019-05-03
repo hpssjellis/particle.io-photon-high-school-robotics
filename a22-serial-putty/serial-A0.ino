@@ -1,5 +1,7 @@
 // Use putty serial mode 
-// To find which come port type on a windows command line
+// gete putty here   https://www.putty.org/
+// To find which COM port use the device manager
+// If no access to the device manager type on a windows command line   CMD or powershell
 // mode
 
 
