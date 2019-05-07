@@ -22,11 +22,9 @@
 
 * looking at the strip the three pins are: 
 
-* D1 
-
-* A3 
-
-* A4 
+* ______________________________________--- D1
+* ......  .........   ........   .......--- A3
+* ______________________________________--- A4
 
 *  resistor attached D0 connected parallel with A4 
 
