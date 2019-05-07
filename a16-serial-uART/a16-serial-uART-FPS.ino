@@ -1,5 +1,5 @@
 // This #include statement was automatically added by the Particle IDE.
-#include <Fingerprint_FPS_GT511C3.h>
+#include <FPS_GT511C3.h>
 
 /* 
 	FPS_Enroll.ino - Library example for controlling the GT-511C3 Finger Print Scanner (FPS)
