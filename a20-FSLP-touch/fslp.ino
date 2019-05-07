@@ -5,8 +5,6 @@
  
 
 //X-antonio-force-pressure-strip 
-
- 
  
 
 /* 
@@ -56,9 +54,7 @@
 
 */ 
 
- 
- 
- 
+  
 
 void setup() 
 
@@ -72,40 +68,17 @@ void setup()
 
  
  
-
-void loop() 
-
-{ 
+void loop() { 
 
  int pressure, position; 
 
-  
-
-  
-
  position = fslpGetPosition(); 
-
- 
- 
 
  pressure = fslpGetPressure(); 
 
+ Particle.publish("Position = "+ String(position),"Pressure = "+ String(pressure), 60, PRIVATE);   
+ delay(1000);
  
- 
- 
-
- Particle.publish("Position = ", String(position), 60, PRIVATE);   
-
- 
- 
-
- Particle.publish("Pressure = ", String(pressure), 60, PRIVATE);   
-
- 
- 
-
- delay(4000); 
-
 } 
 
  
