@@ -4,6 +4,8 @@
 
 
 // MUST HAVE A 6 VOLT EXTERNAL BATTERY
+// Servos run from 0 to 180 degrees
+
 // servo red to 6V battery positive
 // servo ground (brown or black) to 6V battery negative
 // servo ground to Photon GND
@@ -40,7 +42,7 @@ void loop() {
     
     for (int myLoop = 0; myLoop <= 180; myLoop++){
         myServo4.write(myLoop);
-        delay(20);
+        delay(25);  // short delay 25 ms
     }
 
 
