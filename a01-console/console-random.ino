@@ -1,4 +1,4 @@
-// Easiest Analog Console test program
+// Slightly more advanced
 // By Jeremy Ellis
 
 // lots of sensors have these labels 
