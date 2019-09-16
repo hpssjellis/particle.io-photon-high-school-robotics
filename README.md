@@ -1,4 +1,20 @@
 # particle.io-photon-high-school-robotics
+
+
+
+Note: update Sept 16, 2019
+
+If in any of my code you see
+
+
+```https://api.spark.io/v1/devices/```
+
+
+It has been deprecated and this code should replace it
+
+```https://api.particle.io/v1/devices/```
+
+
 Most of the important files from my High School Robotics course using the particle.io photon, a wifi out of the box arduino.
 
 
