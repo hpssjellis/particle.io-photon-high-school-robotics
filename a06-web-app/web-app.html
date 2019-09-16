@@ -87,7 +87,7 @@ function getFormValues(fobj){
 }
 function sendToParticle(myIn){
     document.all.myParameter.value = myIn
-    document.myForm.action = 'https://api.spark.io/v1/devices/' + document.all.myDeviceId.value + '/' + document.all.myFunctionName.value
+    document.myForm.action = 'https://api.particle.io/v1/devices/' + document.all.myDeviceId.value + '/' + document.all.myFunctionName.value
     myAjax(document.all.myCoolForm, document.myForm.action, 'myDivId')   
     
 }
