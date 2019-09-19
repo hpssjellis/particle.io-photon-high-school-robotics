@@ -183,4 +183,10 @@ https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
 
 
 
+IDS (Independent Directed Studies) for Roboitcs and Machine Learning course at
+
+https://github.com/hpssjellis/fraser-valley-IDS-robotics-machine-learning-javascript-high-school
+
+
+
 
