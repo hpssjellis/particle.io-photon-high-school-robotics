@@ -217,3 +217,70 @@ void otSysButtonProcess(otInstance *aInstance)
 ```
 
 -------------------------------------------------------------------------
+
+
+
+
+edit this file   examples/apps/cli/main.c
+
+in the headers
+```
+#include <openthread/instance.h>
+#include <openthread/thread.h>
+#include <openthread/thread_ftd.h>
+
+```
+
+
+before any if statements
+
+```
+void OTCALL handleNetifStateChanged(uint32_t aFlags, void *aContext);
+```
+
+
+
+add this function to the main() function after the otCliUartInit call.
+
+```
+/* Register Thread state change handler */
+otSetStateChangedCallback(instance, handleNetifStateChanged, instance);
+```
+
+In main.c, after the main() function, implement the handleNetifStateChanged function.
+```
+void OTCALL handleNetifStateChanged(uint32_t aFlags, void *aContext)
+{
+   if ((aFlags & OT_CHANGED_THREAD_ROLE) != 0)
+   {
+       otDeviceRole changedRole = otThreadGetDeviceRole(aContext);
+
+       switch (changedRole)
+       {
+       case OT_DEVICE_ROLE_LEADER:
+           otSysLedSet(1, true);
+           otSysLedSet(2, false);
+           otSysLedSet(3, false);
+           break;
+
+       case OT_DEVICE_ROLE_ROUTER:
+           otSysLedSet(1, false);
+           otSysLedSet(2, true);
+           otSysLedSet(3, false);
+           break;
+       
+       case OT_DEVICE_ROLE_CHILD:
+           otSysLedSet(1, false);
+           otSysLedSet(2, false);
+           otSysLedSet(3, true);
+           break;
+       
+       case OT_DEVICE_ROLE_DETACHED:
+       case OT_DEVICE_ROLE_DISABLED:
+           /* Clear LED4 if Thread is not enabled. */
+           otSysLedSet(4, false);
+           break;
+        }
+    }
+}
+```
