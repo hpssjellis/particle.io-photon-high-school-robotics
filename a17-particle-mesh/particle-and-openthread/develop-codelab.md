@@ -284,3 +284,32 @@ void OTCALL handleNetifStateChanged(uint32_t aFlags, void *aContext)
     }
 }
 ```
+
+
+
+-----------------------------------------------------------
+
+
+Next section described best here https://codelabs.developers.google.com/codelabs/openthread-apis/#6
+
+
+-----------------------------------------------------------------------------------
+
+
+
+https://codelabs.developers.google.com/codelabs/openthread-apis/#7
+
+-------------------------------------------------------------------------
+
+
+
+
+some final stuff on the next 2 pages. flashing to the usb nrf52840 is different and needs some of the other installed tools.
+
+this github gitpod may be helpful
+
+https://github.com/hpssjellis/my-gitpod-of-openthread
+
+gitpod would be here
+
+https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
