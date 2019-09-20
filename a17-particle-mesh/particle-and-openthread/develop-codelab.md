@@ -8,7 +8,8 @@ https://codelabs.developers.google.com/codelabs/openthread-apis/#0
 ```cd ~
 git clone --recursive https://github.com/openthread/openthread.git
 cd openthread
-./bootstrap```
+./bootstrap
+```
 
 
 to this file
