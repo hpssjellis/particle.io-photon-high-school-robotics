@@ -190,17 +190,8 @@ void setNetworkConfiguration(otInstance *aInstance)
     memcpy(aDataset.mNetworkName.m8, aNetworkName, length);
     aDataset.mComponents.mIsNetworkNamePresent = true;
 
-#if OPENTHREAD_FTD
     otDatasetSetActive(aInstance, &aDataset);
 
-    /* Set the router selection jitter to override the 2 minute default.
-       CLI cmd > routerselectionjitter 20
-       Warning: For demo purposes only - not to be used in a real product */
-    uint8_t jitterValue = 20;
-    otThreadSetRouterSelectionJitter(aInstance, jitterValue);
-#else
-    OT_UNUSED_VARIABLE(aInstance);
-#endif
 }
 
 
