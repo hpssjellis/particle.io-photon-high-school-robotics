@@ -43,38 +43,17 @@ static void setNetworkConfiguration(otInstance *aInstance);
 
 // my test includes
 
-/* Header for the functions defined here */
-#include "openthread-system.h"
 
-#include <string.h>
-
-/* Header to access an OpenThread instance */
-#include <openthread/instance.h>
-
-/* Headers for lower-level nRF52840 functions */
-#include "platform-nrf5.h"
-#include "hal/nrf_gpio.h"
-#include "hal/nrf_gpiote.h"
-#include "nrfx/drivers/include/nrfx_gpiote.h"
-
-
-#include <openthread/instance.h>
 #include <openthread/thread.h>
-#include <openthread/thread_ftd.h>
+//#include <openthread/thread_ftd.h>
 
 
 #include <string.h>
-
-#include <openthread/message.h>
-#include <openthread/udp.h>
-
-#include "utils/code_utils.h"
-
-
-
 
 
 // end test includes
+
+
 
 #if OPENTHREAD_EXAMPLES_POSIX
 #include <setjmp.h>
