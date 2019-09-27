@@ -26,13 +26,21 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
+
 #include <assert.h>
 #include <openthread-core-config.h>
 #include <openthread/config.h>
 
+#include <openthread/cli.h>
 #include <openthread/diag.h>
 #include <openthread/ncp.h>
 #include <openthread/tasklet.h>
+#include <openthread/platform/logging.h>
+
+#include <openthread/instance.h>
+#include <openthread/message.h>
+#include <openthread/udp.h>
+
 
 #include "openthread-system.h"
 
@@ -46,7 +54,7 @@ static void setNetworkConfiguration(otInstance *aInstance);
 
 
 #include <openthread/thread.h>
-//#include <openthread/thread_ftd.h>
+#include <openthread/thread_ftd.h>
 
 
 #include <string.h>
