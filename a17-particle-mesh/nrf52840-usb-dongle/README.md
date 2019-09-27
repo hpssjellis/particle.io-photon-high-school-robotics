@@ -1,7 +1,19 @@
 just trying the codelab and including the files here if they actually work. Only trying to get the credentials set. nothing else
 
 
+
+
+
+
 ## Got main-for-cli.c working but not yet working is main-for-ncp.c 
+
+
+Got main.c for ncp working by making this change to the makefile-nrf52840
+
+```
+#configure_OPTIONS              += --enable-radio-only
+
+```
 
 
 https://codelabs.developers.google.com/codelabs/openthread-apis/#0
