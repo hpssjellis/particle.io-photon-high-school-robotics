@@ -1,0 +1,63 @@
+// uncomment the next line to improve stability
+//SYSTEM_THREAD(ENABLED);  // causes a small delay for Mesh.publish()
+
+
+//Next line allows you to use the Particle Featherwing plug and play
+STARTUP(System.enableFeature(FEATURE_ETHERNET_DETECTION)); 
+
+/////////////////////////// important globals here ///////////////////////////////
+
+int  myCode =1;  // different number for each device
+bool myXenonAntennaAttached = false;  
+bool myArgonBothAntennaAttached = false;  
+bool myPublishToConsole = true;        // set true for Argon or debugging
+
+/////////////////////////////// end globals ////////////////////////////
+
+void setup() {
+   
+   pinMode(D7, OUTPUT);
+   Mesh.subscribe("mySendToAll", myHandler);
+   if (myXenonAntennaAttached){
+       #if (PLATFORM_ID == PLATFORM_XENON) 
+	       digitalWrite(ANTSW1, 0);
+	       digitalWrite(ANTSW2, 1);
+       #endif  
+   }
+    if (myArgonBothAntennaAttached){
+       #if (PLATFORM_ID == PLATFORM_ARGON) 
+	       digitalWrite(ANTSW1, 1);
+	       digitalWrite(ANTSW2, 0);
+       #endif  
+   }
+     
+}
+
+void loop() {
+    Mesh.publish("mySendToAll", String(myCode));
+    
+    for (int myLoop = 0; myLoop < myCode; myLoop++){ 
+       digitalWrite(D7, HIGH);
+       delay(100);   // very quick flash
+       digitalWrite(D7, LOW);
+       delay(100);   
+    }
+    delay(30000);   // mesh publish every 10 seconds
+}
+
+// Event listener for "mySendToAll" event from Xenons
+void myHandler(const char *event, const char *data) {
+
+    String parse = data;  //Cast char*data to String class
+    int myNumber = parse.toInt();
+    if (myPublishToConsole){  // mainly for Argon gateway unless debugging
+        Particle.publish("Talked to device number:", parse); 
+    }
+    for (int myLoop = 0; myLoop < myNumber; myLoop++){
+       digitalWrite(D7, HIGH);
+       delay(100);   // very quick flash
+       digitalWrite(D7, LOW);
+       delay(100);   
+    }
+    delay(500); // to tell if 2 devices signal at similar times
+}
