@@ -15,7 +15,11 @@ Done
 Node B:
 
 > udp open
+
 Done
+
 > udp bind :: 1234
+
 Done
+
 26 bytes from fe80:0:0:0:b459:6368:a779:b6df 49154 {"name":"fred","age":"40"}
