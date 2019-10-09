@@ -31,3 +31,7 @@ Done
     static constexpr const char* MULTICAST_ADDR = "ff03::1:1001";
     
     static const uint16_t MAX_PACKET_LEN = 1232;
+
+
+
+{"type":"mySendToAll","data":"1"}
