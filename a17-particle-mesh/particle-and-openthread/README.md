@@ -23,3 +23,11 @@ Done
 Done
 
 26 bytes from fe80:0:0:0:b459:6368:a779:b6df 49154 {"name":"fred","age":"40"}
+
+
+
+    static const uint16_t PORT = 36969;
+    
+    static constexpr const char* MULTICAST_ADDR = "ff03::1:1001";
+    
+    static const uint16_t MAX_PACKET_LEN = 1232;
