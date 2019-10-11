@@ -2,14 +2,26 @@
 // Particle Mesh Devices Connection with Openthread
 // By Jeremy Ellis
 
-// Install po-util with the following
+// Warning, will need Argon binaries to get Particle back to normal
+// v1.4.1-rc.1 foud at the below link
+// https://github.com/particle-iot/device-os/releases/download/v1.4.1-rc.1/particle_device-os@1.4.1-rc.1.zip
+// Latest OS Device information found at the bottom of this blog
+// https://community.particle.io/t/particle-device-os-updates-thread/14378/97
+// files are in the \1.4.1-rc.1\argon\release\
+// particle flash --usb argon-system-part1@1.4.1-rc.1.bin
+// reminder if you have to rer-install the boatloader you must flash in serial mode first then dfu for the system file
+// particle flash --serial argon-bootloader@1.4.1-rc.1.bin
+
+
+
+// To run the below code you must install po-util with the following
+// Might want to pre install git, node, npm and particle-cli
 // sudo apt install curl
 // bash <(curl -sL get.po-util.com)
-// Might want to pre install git, node, npm and particle-cli
 // To check po-util version type
 // po
 
-// Start a po-util project
+// To start a po-util project
 // po init argon myArgonProject
 // cd myArgonProject
 
@@ -21,6 +33,13 @@
 // particle login
 // particle list
 // particle flash --usb myArgonProject-argon.bin
+
+// Good idea between builds to clean
+// po argon clean
+
+// Following is the code to build
+
+
 
 
 #include "Particle.h"
