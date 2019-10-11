@@ -1,9 +1,10 @@
 
 // Particle Mesh Devices Connection with Openthread
 // By Jeremy Ellis
+// Twitter @rocksetta
 
 // Warning, will need Argon binaries to get Particle back to normal
-// v1.4.1-rc.1 foud at the below link
+// v1.4.1-rc.1 found at the below link
 // https://github.com/particle-iot/device-os/releases/download/v1.4.1-rc.1/particle_device-os@1.4.1-rc.1.zip
 // Latest OS Device information found at the bottom of this blog
 // https://community.particle.io/t/particle-device-os-updates-thread/14378/97
