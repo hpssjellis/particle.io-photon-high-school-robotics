@@ -1,8 +1,6 @@
 
-// Particle Mesh Devices Connection Information Testing
+// Particle Mesh Devices Connection with Openthread
 // By Jeremy Ellis
-
-
 
 // Install po-util with the following
 // sudo apt install curl
@@ -142,186 +140,67 @@ void setup() {   // runs once
    char *myNetworkName = otThreadGetNetworkName(ot);
    char myNetworkNameBuff[255];
    snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
-   Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); //shows printing an integer variable
+	
+   Particle.publish("Successful","Startup", 60, PRIVATE);	
+   delay(1000);
+   Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); 
+   delay(1000);
+	
+   // Mesh.localIP().toString().c_str());
+   Particle.publish("My local ip: ", String(Mesh.localIP()), 60, PRIVATE); //shows local Mesh IPv4 address
    delay(1000);
 
 }
 
 
-void loop() {
+void loop() {   // runs continuously
 
-
- myCount +=1;
+   myCount +=1;
     
-    if (digitalRead(D6) == 0){   
-        Particle.connect();      // Cool I am a Photon
-    } else {
-        Particle.disconnect();  // Now I am an Arduino
-    }
+   if (digitalRead(D6) == 0){  // If D6 is HIGH
+      Particle.connect();      // I am a Photon (has Wifi)
+   } else {
+      Particle.disconnect();  // I am an Arduino (no Wifi)
+   }
 
-
-
-    if (myButtonReady && digitalRead(D0) == 1){
-        myCount = 0;
-        digitalWrite(D7, 1);
-        myButtonReady = false;
+   if (myButtonReady && digitalRead(D0) == 1){
+      myCount = 0;
+      digitalWrite(D7, 1);
+      myButtonReady = false;
       
-        Particle.publish("Sending Broadcast", "...", 60, PRIVATE); 
-        Mesh.publish("mySendToAll", String(myCode));  
-        delay(1000);
-        digitalWrite(D7, 0);
-    }
+      Particle.publish("Sending Mesh Multicast", "...", 60, PRIVATE); 
+      Mesh.publish("mySendToAll", String(myCode));  
+      delay(1000);
+      digitalWrite(D7, 0);
+   }
     
-    if (myCount >= 1000){
-        if (! myButtonReady){
-           Particle.publish("Device Reset", "...", 60, PRIVATE); 
-        }
-        myButtonReady = true; 
+   if (myCount >= 1000){
+      if (! myButtonReady){
+         Particle.publish("Device Reset", "...", 60, PRIVATE); 
+      }
+      myButtonReady = true; 
 
-    }
-    delay(5);  // becomes about 5 seconds
-
-
+   }
+   delay(5);  // becomes about 5 seconds with the 1000 count 
 
 }
 
 
-
-
-
-
-// Event listener for "mySendToAll" event from Xenons
+// Event listener for "mySendToAll" event from Mesh Devices
 void myHandler(const char *event, const char *data) {
 
-    String parse = data;  //Cast char*data to String class
-    int myNumber = parse.toInt();
-    if (myPublishToConsole){  // mainly for Argon gateway unless debugging
-        Particle.publish("Flashing D7 this many times:", parse, 60, PRIVATE); 
-    }
-    for (int myLoop = 0; myLoop < myNumber; myLoop++){
-       digitalWrite(D7, HIGH);
-       delay(200);   // very quick flash
-       digitalWrite(D7, LOW);
-       delay(200);   
-    }
-    delay(500); // to tell if 2 devices signal at similar times
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-        otInstance*  ot = ot_get_instance();
-
-        int8_t myChannel = otLinkGetChannel(ot);
-        uint16_t myPanID = otLinkGetPanId(ot); // otPanId
-
-        char myPanIDBuff[255];
-        snprintf(myPanIDBuff, sizeof(myPanIDBuff), "0x%02X", myPanID); // put hex into myPanIDBuff
-
-
-        constexpr char hexmap[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
-        const otMasterKey *key = otThreadGetMasterKey(ot);
-        wchar_t szKey[OT_MASTER_KEY_SIZE * 2 + 1] = { 0 };
-        for (uint8_t i = 0; i < OT_MASTER_KEY_SIZE; i++)
-        {
-                szKey[2 * i]     = hexmap[(key->m8[i] & 0xF0) >> 4];
-                szKey[2 * i + 1] = hexmap[key->m8[i] & 0x0F];
-        }
-
-
-        char myMasterKeyBuff[255];
-        wcstombs(myMasterKeyBuff, szKey, sizeof(myMasterKeyBuff));
-
-// End changes
-
-        char *myNetworkName = otThreadGetNetworkName(ot);
-        char myNetworkNameBuff[255];
-        snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
-
-
-        Particle.publish("----------------","-------------", 60, PRIVATE); // just to show a space between samples
-        delay(2000);
-        Particle.publish("Particle Thread ","Connection Information", 60, PRIVATE); // just to show a space between samples
-        delay(2000);
-        Particle.publish("My Channel: ", String(myChannel), 60, PRIVATE); //shows printing an integer variable
-
-        delay(2000);
-        Particle.publish("Argon Pan ID: ", String(myPanIDBuff), 60, PRIVATE); //shows printing an integer variable
-        delay(2000);
-
-        Particle.publish("My Master Key: ", String(myMasterKeyBuff), 60, PRIVATE); //shows printing an integer variable
-        delay(2000);
-        Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); //shows printing an integer variable
-        delay(2000);
-        Particle.publish("----------------","-------------", 60, PRIVATE); // just to show a space between samples
-        delay(2000);
-        Particle.publish("Generates the same info","every 60 seconds", 60, PRIVATE); // just to show a space between samples
-
-        delay(60000); // wait 60 seconds before re-print
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void setup() {
-   
-   pinMode(D7, OUTPUT);
-   Mesh.subscribe("mySendToAll", myHandler);
-   if (myXenonAntennaAttached){
-       #if (PLATFORM_ID == PLATFORM_XENON) 
-	       digitalWrite(ANTSW1, 0);
-	       digitalWrite(ANTSW2, 1);
-       #endif  
+   String parse = data;  //Cast char*data to String class
+   int myNumber = parse.toInt();
+   if (myPublishToConsole){  // mainly for Argon gateway unless debugging
+      Particle.publish("Flashing D7 this many times:", parse, 60, PRIVATE); 
    }
-    if (myArgonBothAntennaAttached){
-       #if (PLATFORM_ID == PLATFORM_ARGON) 
-	       digitalWrite(ANTSW1, 1);
-	       digitalWrite(ANTSW2, 0);
-       #endif  
+   for (int myLoop = 0; myLoop < myNumber; myLoop++){
+      digitalWrite(D7, HIGH);
+      delay(200);   // very quick flash
+      digitalWrite(D7, LOW);
+      delay(200);   
    }
-     
+   delay(500); // to tell if 2 devices signal at similar times
 }
 
 
-
-
-
-
-
-*/
-*/
