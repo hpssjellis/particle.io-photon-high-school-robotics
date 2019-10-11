@@ -25,8 +25,15 @@
 // particle flash --usb myArgonProject-argon.bin
 
 
-
 #include "Particle.h"
+
+// uncomment the next line to improve stability
+SYSTEM_THREAD(ENABLED);  // causes a small delay for Mesh.publish()
+
+SYSTEM_MODE(SEMI_AUTOMATIC);  // so wifi not needed
+
+//Next line allows you to use the Particle Featherwing plug and play
+//STARTUP(System.enableFeature(FEATURE_ETHERNET_DETECTION)); 
 
 #define OT_MASTER_KEY_SIZE 16
 
@@ -34,71 +41,57 @@
 #include "ot_api.h"
 #include "openthread/dataset.h"
 
+// Following line might be needed
 //#include <openthread/thread_ftd.h>
-
 
 #include <string.h>
 
 
 extern "C" {
 
-int8_t    otLinkGetChannel(otInstance *aInstance);
-uint16_t  otLinkGetPanId(otInstance *aInstance);         // type otPanId
-otMasterKey *otThreadGetMasterKey(otInstance *aInstance);
-char     *otThreadGetNetworkName(otInstance *aInstance);
+   int8_t               otLinkGetChannel(otInstance *aInstance);
+   uint16_t             otLinkGetPanId(otInstance *aInstance);         
+   otMasterKey         *otThreadGetMasterKey(otInstance *aInstance);
+   char                *otThreadGetNetworkName(otInstance *aInstance);
+   otOperationalDataset aDataset;
 
-
-        otOperationalDataset aDataset;
-
-
-void myHandler(const char *event, const char *data); 
+   void myHandler(const char *event, const char *data); 
 
 };
 
 
-
-
-// uncomment the next line to improve stability
-//SYSTEM_THREAD(ENABLED);  // causes a small delay for Mesh.publish()
-
-
-//Next line allows you to use the Particle Featherwing plug and play
-STARTUP(System.enableFeature(FEATURE_ETHERNET_DETECTION)); 
-
 /////////////////////////// important globals here ///////////////////////////////
 
-int  myCode =3;  // number of flashes
-bool myXenonAntennaAttached = false;  
+int  myCode                     = 5;  // number of flashes
+bool myXenonAntennaAttached     = false;  
 bool myArgonBothAntennaAttached = false;  
-bool myPublishToConsole = true;        // set true for Argon or debugging
-
+bool myPublishToConsole         = true;        // set true for Argon for debugging
 
 int myCount = 0;
 bool myButtonReady = true;
 
-
-
 /////////////////////////////// end globals ////////////////////////////
 
 
+void setup() {   // runs once
 
+   pinMode(D0, INPUT_PULLDOWN);   // set pin D0 as an input at zero
+   pinMode(D6, INPUT_PULLDOWN);   // set pin D6 as an input at zero
+   pinMode(D7, OUTPUT);           // our trusty D7 LED
+    
+   if (digitalRead(D6) == 0){   // If D6 HIGH connect wifi
+        Particle.connect();
+   }
 
-
-
-
-void setup() {
-
-
-   pinMode(D0, INPUT_PULLDOWN);
-   pinMode(D7, OUTPUT);
    Mesh.subscribe("mySendToAll", myHandler);
-
+	
    if (myXenonAntennaAttached){
        #if (PLATFORM_ID == PLATFORM_XENON) 
 	   digitalWrite(ANTSW1, 0);
 	   digitalWrite(ANTSW2, 1);
        #endif  
    }
+	
    if (myArgonBothAntennaAttached){
        #if (PLATFORM_ID == PLATFORM_ARGON) 
 	   digitalWrite(ANTSW1, 1);
@@ -106,63 +99,51 @@ void setup() {
        #endif  
    }
 
+   // Set Mesh Dataset	  
+   memset(&aDataset, 0, sizeof(otOperationalDataset));
 
+   /* Set Network Name to OTCodelab */
+   static char aNetworkName[] = "OTCodelab";
+   size_t length = strlen(aNetworkName);
+   assert(length <= OT_NETWORK_NAME_MAX_SIZE);
+   memcpy(aDataset.mNetworkName.m8, aNetworkName, length);
+   aDataset.mComponents.mIsNetworkNamePresent = true;
 
-        memset(&aDataset, 0, sizeof(otOperationalDataset));
-
-
-
-        /* Set Network Name to OTCodelab */
-        static char          aNetworkName[] = "OTCodelab";
-        size_t length = strlen(aNetworkName);
-        assert(length <= OT_NETWORK_NAME_MAX_SIZE);
-        memcpy(aDataset.mNetworkName.m8, aNetworkName, length);
-        aDataset.mComponents.mIsNetworkNamePresent = true;
-
-
-
-
-    /*
+   /*
      * Fields that can be configured in otOperationDataset to override defaults:
      *     Network Name, Mesh Local Prefix, Extended PAN ID, PAN ID, Delay Timer,
      *     Channel, Channel Mask Page 0, Network Master Key, PSKc, Security Policy
-     */
-    aDataset.mActiveTimestamp                      = 1;
-    aDataset.mComponents.mIsActiveTimestampPresent = true;
+   */
+   aDataset.mActiveTimestamp                      = 1;
+   aDataset.mComponents.mIsActiveTimestampPresent = true;
 
-    /* Set Channel to 15 */
-    aDataset.mChannel                      = 15;
-    aDataset.mComponents.mIsChannelPresent = true;
+   /* Set Channel to 15 */
+   aDataset.mChannel                      = 15;
+   aDataset.mComponents.mIsChannelPresent = true;
 
-    /* Set Pan ID to 2222 */
-    aDataset.mPanId                      = (otPanId)0x2222;
-    aDataset.mComponents.mIsPanIdPresent = true;
+   /* Set Pan ID to 2222 */
+   aDataset.mPanId                      = (otPanId)0x2222;
+   aDataset.mComponents.mIsPanIdPresent = true;
 
-    /* Set Extended Pan ID to C0DE1AB5C0DE1AB5 */
-    uint8_t extPanId[OT_EXT_PAN_ID_SIZE] = {0xC0, 0xDE, 0x1A, 0xB5, 0xC0, 0xDE, 0x1A, 0xB5};
-    memcpy(aDataset.mExtendedPanId.m8, extPanId, sizeof(aDataset.mExtendedPanId));
-    aDataset.mComponents.mIsExtendedPanIdPresent = true;
+   /* Set Extended Pan ID to C0DE1AB5C0DE1AB5 */
+   uint8_t extPanId[OT_EXT_PAN_ID_SIZE] = {0xC0, 0xDE, 0x1A, 0xB5, 0xC0, 0xDE, 0x1A, 0xB5};
+   memcpy(aDataset.mExtendedPanId.m8, extPanId, sizeof(aDataset.mExtendedPanId));
+   aDataset.mComponents.mIsExtendedPanIdPresent = true;
 
-    /* Set master key to 1234C0DE1AB51234C0DE1AB51234C0DE */
-    uint8_t key[OT_MASTER_KEY_SIZE] = {0x12, 0x34, 0xC0, 0xDE, 0x1A, 0xB5, 0x12, 0x34, 0xC0, 0xDE, 0x1A, 0xB5};
-    memcpy(aDataset.mMasterKey.m8, key, sizeof(aDataset.mMasterKey));
-    aDataset.mComponents.mIsMasterKeyPresent = true;
+   /* Set master key to 1234C0DE1AB51234C0DE1AB51234C0DE */
+   uint8_t key[OT_MASTER_KEY_SIZE] = {0x12, 0x34, 0xC0, 0xDE, 0x1A, 0xB5, 0x12, 0x34, 0xC0, 0xDE, 0x1A, 0xB5};
+   memcpy(aDataset.mMasterKey.m8, key, sizeof(aDataset.mMasterKey));
+   aDataset.mComponents.mIsMasterKeyPresent = true;
 
+   // Must have an otInstance
+   otInstance*  ot = ot_get_instance();
+   otDatasetSetActive(ot, &aDataset);
 
-        otInstance*  ot = ot_get_instance();
-
-        otDatasetSetActive(ot, &aDataset);
-
-        char *myNetworkName = otThreadGetNetworkName(ot);
-        char myNetworkNameBuff[255];
-        snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
-
-        Particle.publish("----------------","-------------", 60, PRIVATE); // just to show a space between samples
-        delay(4000);
-        Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); //shows printing an integer variable
-        delay(1000);
-
-
+   char *myNetworkName = otThreadGetNetworkName(ot);
+   char myNetworkNameBuff[255];
+   snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
+   Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); //shows printing an integer variable
+   delay(1000);
 
 }
 
@@ -172,6 +153,14 @@ void loop() {
 
  myCount +=1;
     
+    if (digitalRead(D6) == 0){   
+        Particle.connect();      // Cool I am a Photon
+    } else {
+        Particle.disconnect();  // Now I am an Arduino
+    }
+
+
+
     if (myButtonReady && digitalRead(D0) == 1){
         myCount = 0;
         digitalWrite(D7, 1);
@@ -183,14 +172,14 @@ void loop() {
         digitalWrite(D7, 0);
     }
     
-    if (myCount >= 10000){
+    if (myCount >= 1000){
         if (! myButtonReady){
            Particle.publish("Device Reset", "...", 60, PRIVATE); 
         }
         myButtonReady = true; 
 
     }
-    delay(3);
+    delay(5);  // becomes about 5 seconds
 
 
 
@@ -334,4 +323,5 @@ void setup() {
 
 
 
+*/
 */
