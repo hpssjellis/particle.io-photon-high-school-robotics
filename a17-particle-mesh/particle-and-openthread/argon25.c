@@ -96,8 +96,9 @@ bool myButtonReady = true;
 
 void setup() {   // runs once
 
-   pinMode(D0, INPUT_PULLDOWN);   // set pin D0 as an input at zero
-   pinMode(D6, INPUT_PULLDOWN);   // set pin D6 as an input at zero
+   pinMode(D0, INPUT_PULLDOWN);   // set pin D0 as LOW input send Mesh.publish on HIGH
+   pinMode(D3, INPUT_PULLDOWN);   // set pin D3 as LOW input send particle.publish on HIGH
+   pinMode(D6, INPUT_PULLDOWN);   // set pin D6 as LOW input wifi off on HIGH
    pinMode(D7, OUTPUT);           // our trusty D7 LED
     
    if (digitalRead(D6) == 0){   // If D6 HIGH connect wifi
@@ -238,4 +239,4 @@ void myHandler(const char *event, const char *data) {
    }
    delay(500); // to tell if 2 devices signal at similar times
 }
-   
+
