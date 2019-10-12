@@ -3,6 +3,10 @@
 * By Jeremy Ellis
 * Twitter @rocksetta
 
+* D0 to 3V3 send Mesh.publish to all devices flash D7
+* D3 to 3V3 send Particle.publish to the console with generic information
+* D6 to 3V3 disconnect wifi. Presently only works after wifi connected at startup.
+
 * Warning, will need Argon binaries to get Particle back to normal
 * v1.4.1-rc.1 found at the below link
 * https://github.com/particle-iot/device-os/releases/download/v1.4.1-rc.1/particle_device-os@1.4.1-rc.1.zip
@@ -84,6 +88,9 @@ bool myPublishToConsole         = true;        // set true for Argon for debuggi
 int myCount = 0;
 bool myButtonReady = true;
 
+
+
+
 /////////////////////////////// end globals ////////////////////////////
 
 
@@ -149,22 +156,7 @@ void setup() {   // runs once
    memcpy(aDataset.mMasterKey.m8, key, sizeof(aDataset.mMasterKey));
    aDataset.mComponents.mIsMasterKeyPresent = true;
 
-   // Must have an otInstance
-   otInstance*  ot = ot_get_instance();
-   otDatasetSetActive(ot, &aDataset);
 
-   char *myNetworkName = otThreadGetNetworkName(ot);
-   char myNetworkNameBuff[255];
-   snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
-	
-   Particle.publish("Successful","Startup", 60, PRIVATE);	
-   delay(1000);
-   Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); 
-   delay(1000);
-	
-   // Mesh.localIP().toString().c_str());
-   Particle.publish("My local ip: ", String(Mesh.localIP()), 60, PRIVATE); //shows local Mesh IPv4 address
-   delay(1000);
 
 }
 
@@ -173,11 +165,7 @@ void loop() {   // runs continuously
 
    myCount +=1;
     
-   if (digitalRead(D6) == 0){  // If D6 is HIGH
-      Particle.connect();      // I am a Photon (has Wifi)
-   } else {
-      Particle.disconnect();  // I am an Arduino (no Wifi)
-   }
+
 
    if (myButtonReady && digitalRead(D0) == 1){
       myCount = 0;
@@ -189,15 +177,47 @@ void loop() {   // runs continuously
       delay(1000);
       digitalWrite(D7, 0);
    }
-    
+   
+
+
+   if (myButtonReady && digitalRead(D3) == 1){  // If D3 is HIGH print info to console
+
+
+   // Must have an otInstance
+      otInstance*  ot =    ot_get_instance();
+      otDatasetSetActive(ot, &aDataset);
+
+      char *myNetworkName = otThreadGetNetworkName(ot);
+      char myNetworkNameBuff[255];
+      snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
+	
+      Particle.publish("Successful","Startup", 60, PRIVATE);	
+      delay(2000);
+      Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); 
+      delay(2000);
+	
+      // Mesh.localIP().toString().c_str());
+      Particle.publish("My local ip: ", String(Mesh.localIP()), 60, PRIVATE); //shows local Mesh IPv4 address
+      delay(2000);
+   } 
+ 
+
+
+   if (digitalRead(D6) == 0){  // If D6 is HIGH
+      Particle.connect();      // I am a Photon (has Wifi)
+   } else {
+      Particle.disconnect();  // I am an Arduino (no Wifi)
+   }
+
+
    if (myCount >= 1000){
       if (! myButtonReady){
-         Particle.publish("Device Reset", "...", 60, PRIVATE); 
+        // Particle.publish("Next D7 can happen in ", "about 10 seconds", 60, PRIVATE); 
       }
       myButtonReady = true; 
 
    }
-   delay(5);  // becomes about 5 seconds with the 1000 count 
+   delay(10);  // becomes about 5 seconds with the 1000 count 
 
 }
 
@@ -218,5 +238,4 @@ void myHandler(const char *event, const char *data) {
    }
    delay(500); // to tell if 2 devices signal at similar times
 }
-
-
+   
