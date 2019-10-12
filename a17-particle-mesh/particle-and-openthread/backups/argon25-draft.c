@@ -87,7 +87,9 @@ bool myPublishToConsole         = true;        // set true for Argon for debuggi
 
 int myCount = 0;
 bool myButtonReady = true;
-otInstance*  ot = ot_get_instance();
+
+
+  // otInstance*  ot =    ot_get_instance();
 
 /////////////////////////////// end globals ////////////////////////////
 
@@ -155,7 +157,8 @@ void setup() {   // runs once
    aDataset.mComponents.mIsMasterKeyPresent = true;
 
    // Must have an otInstance
-   otDatasetSetActive(ot, &aDataset);
+
+  // otDatasetSetActive(ot, &aDataset);
 
 }
 
@@ -182,14 +185,14 @@ void loop() {   // runs continuously
    if (digitalRead(D3) == 0){  // If D3 is HIGH print info to console
 
 
-   char *myNetworkName = otThreadGetNetworkName(ot);
-   char myNetworkNameBuff[255];
-   snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
+  // char *myNetworkName = otThreadGetNetworkName(ot);
+  // char myNetworkNameBuff[255];
+  // snprintf(myNetworkNameBuff, sizeof(myNetworkNameBuff), "%s", myNetworkName); // network name as a string
 	
    Particle.publish("Successful","Startup", 60, PRIVATE);	
    delay(2000);
-   Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); 
-   delay(2000);
+   //Particle.publish("My Network Name: ", String(myNetworkNameBuff), 60, PRIVATE); 
+   //delay(2000);
 	
    // Mesh.localIP().toString().c_str());
    Particle.publish("My local ip: ", String(Mesh.localIP()), 60, PRIVATE); //shows local Mesh IPv4 address
