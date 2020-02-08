@@ -3,7 +3,9 @@
 
 
 
-# Big News. This entire Github Repository is not being maintained as it is being replaced by an Arduino compatible site at https://github.com/hpssjellis/arduino-high-school-robotics-course
+# Big News. As of Feb 8th, 2020 this entire Github Repository is not being maintained as it is being replaced by an Arduino compatible site at https://github.com/hpssjellis/arduino-high-school-robotics-course. 
+
+## The new site will reach a much larger audience of potential Robotics students and Educators. While taking advantage of the massive amount of open source material and engineers that use the Arduino hardware. I am very excited about the change.
 
 
 
