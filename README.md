@@ -2,6 +2,12 @@
 
 
 
+
+# Big News. This entire Github Repository is not being maintained as it is being replaced by an Arduino compatible site at https://github.com/hpssjellis/arduino-high-school-robotics-course
+
+
+
+
 Note: update Sept 16, 2019
 
 If in any of my code you see
