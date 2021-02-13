@@ -1,5 +1,5 @@
 
-Video https://www.youtube.com/watch?v=ARvSD5UfkQE&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&index=3
+Video https://www.youtube.com/watch?v=ARvSD5UfkQE&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&index=3&t=5s
 
 
 
