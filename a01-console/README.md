@@ -1,6 +1,9 @@
 Basic console program 
 
 
+Video https://www.youtube.com/watch?v=chaqZgd_6Vs&list=PL57Dnr1H_egsL0r4RXPA4PY2yZhOJk5Nr&index=2&t=5s
+
+
 I changed a01-console.ino to be the absolute basic program for showing the console, and printting whatever is at A0
 A0 can give a range from 0 - 4095
 
