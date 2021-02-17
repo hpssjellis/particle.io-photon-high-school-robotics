@@ -23,7 +23,7 @@ A work in progress
 
 1. Rangefinder Ultrasonic	[RB-Ite-54](http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
 
-1. Grove OLED 0.96"	[104030008](http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
+1. Grove OLED 0.96"	[SKU 104030008](https://www.seeedstudio.com/Grove-OLED-Display-0-96.html)	$14.90
 
 
 Total =   
