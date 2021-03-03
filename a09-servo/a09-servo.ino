@@ -40,18 +40,16 @@ void loop() {
     delay(2000);   
     
     
-    for (int myLoop = 0; myLoop <= 180; myLoop++){
+    for (int myLoop = 10; myLoop <= 170; myLoop++){
         myServo4.write(myLoop);
         delay(25);  // short delay 25 ms
     }
 
+    myServo4.detach();   // less weird stuff if you detach the servo
 
     digitalWrite(D7, 0);     // D7 off
     delay(5000);            // 5 second delay
-    
-    
-    myServo4.detach();   // less weird stuff if you detach the servo
-
+       
 }
 
 
