@@ -30,11 +30,11 @@ void loop() {
     
     digitalWrite(D7, 1);       // D7 on    
     
-    myServo4.write(0);          // servo at 0 degrees minimum
-    delay(2000);
+    myServo4.write(10);          // servo at 10 degrees minimum
+    delay(2000);                 // Minimum is 0 sometimes weird
     
-    myServo4.write(180);        // servo at 180 degrees Maximum
-    delay(2000);
+    myServo4.write(170);        // servo at 170 degrees Maximum
+    delay(2000);                // maximum 180 sometimes weird
 
     myServo4.write(90);         // servo at 90 degrees
     delay(2000);   
