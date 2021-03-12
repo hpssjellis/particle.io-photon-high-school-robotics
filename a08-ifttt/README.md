@@ -10,18 +10,5 @@ and send another event back to the Photon
 
 
 
-The video shows a PNP connection that is incorrect. These images have the proper way to connect a PNP and a NPN transistor to the Photon
-.
-.
-
-NPN.jpg
-![NPN.jpg](NPN.jpg)
-
-.
-.
-
-PNP.jpg
-![PNP.jpg](PNP.jpg)
-
 
 
