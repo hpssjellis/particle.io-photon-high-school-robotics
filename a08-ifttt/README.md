@@ -8,3 +8,20 @@ Video [video A08-IFTTT](https://youtu.be/DOlYkTn84Bs?list=PL57Dnr1H_egsL0r4RXPA4
 1. These steps seem to be constantly changing but the basic idea is to subscribe to an event from your photon capture it 
 and send another event back to the Photon
 
+
+
+The video shows a PNP connection that is incorrect. These images have the proper way to connect a PNP and a NPN transistor to the Photon
+.
+.
+
+NPN.jpg
+![NPN.jpg](NPN.jpg)
+
+.
+.
+
+PNP.jpg
+![PNP.jpg](PNP.jpg)
+
+
+
