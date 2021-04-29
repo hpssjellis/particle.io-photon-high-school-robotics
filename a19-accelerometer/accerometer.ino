@@ -146,7 +146,7 @@ void loop(){
 
  Temperature = Temperature / 14.5;  
 
- Particle.publish("Temp="+String(Temperature, DEC)+" °C", String("x=" + String(XValueF, DEC)+", y=" + String(YValueF, DEC)+", z=" + String(ZValueF, DEC)), 60, PRIVATE);   
+ Particle.publish("Temp="+String(Temperature, DEC)+" °C", String("x=" + String(XValueF, 3)+", y=" + String(YValueF, 3)+", z=" + String(ZValueF, 3)), 60, PRIVATE);   
 
  delay(1000);               
 
