@@ -1,7 +1,8 @@
 # particle.io-photon-high-school-robotics
 
 
-
+## Main Site
+Main Teaching Site that will use this information [https://github.com/hpssjellis/high-school-robotics-tinyml-machine-learning-curriculum](https://github.com/hpssjellis/high-school-robotics-tinyml-machine-learning-curriculum)
 
 # Big News. As of Feb 8th, 2020 this entire Github Repository is not being maintained as it is being replaced by an Arduino compatible site at https://github.com/hpssjellis/arduino-high-school-robotics-course. 
 
